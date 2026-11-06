@@ -1,0 +1,1150 @@
+/* 自动生成，请勿手改 —— 源在 build/gen.js 的内联 <style> 块里。
+   手工改了下次构建会被覆盖，build/check.js 也会报两份不一致。 */
+
+/* ===== V20 色板（build/palette.js 生成，勿在此改；Sakura colours draw on Sakura Crossing, MIT） ===== */
+:root,html[data-skin="sakura"]{--paper:#F7F1E8;--surface:#FFFBF5;--raised:#F2E7DA;--ink:#2A2731;--ink-2:#5B5566;--line:#E4D9CC;--edge:#8E8174;--mark:#A34560;--rail:#2E5E6E;--plate:#2E5E6E;--on-plate:#FFFBF5;--lamp:#F0B45C;--on-lamp:#2A2731;--sakura:#E79BB0;--leaf:#7FA58C;--wood:#A8734A;--shadow:#D6C7B5;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#2A2731;--on-code:#F7F1E8;--tx-3:#5B5566;--tx-link:#A34560;--tx-em:#A34560;--tx-tag:#2E5E6E;--tx-quote:#6A4E6E;--tx-code:#8A5A33;--tx-num:#A34560;--tx-link-line:#CA93AD;color-scheme:light}
+html[data-time="night"][data-skin="sakura"]{--paper:#161A2C;--surface:#20253A;--raised:#2A3049;--ink:#EFE8DD;--ink-2:#B8B2C4;--line:#353C58;--edge:#6C7497;--mark:#E8A3B8;--rail:#6FB3C0;--plate:#F2B866;--on-plate:#161A2C;--lamp:#F2B866;--on-lamp:#161A2C;--sakura:#E8A3B8;--leaf:#7FA58C;--wood:#C9956A;--shadow:#0C0F1C;--glow:#F2B86647;--lift:inset 0 2px 0 var(--glow);--code-bg:#10131F;--on-code:#EFE8DD;--tx-3:#B8B2C4;--tx-link:#E8A3B8;--tx-em:#E8A3B8;--tx-tag:#6FB3C0;--tx-quote:#C9BDE0;--tx-code:#F2C48A;--tx-num:#F2B866;--tx-link-line:#8F6886;color-scheme:dark}
+html[data-skin="coast"]{--paper:#EEF4F2;--surface:#FFFDF7;--raised:#E2EDEC;--ink:#253F4B;--ink-2:#4E6770;--line:#D3E4E5;--edge:#6F8E98;--mark:#1F6585;--rail:#286E69;--plate:#216788;--on-plate:#FFFDF7;--lamp:#E2C38C;--on-lamp:#253F4B;--sakura:#D88C7A;--leaf:#8FB5A6;--wood:#B89268;--shadow:#C6D6D6;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#203D4C;--on-code:#E6F6F7;--tx-3:#4E6770;--tx-link:#1F6585;--tx-em:#1F6585;--tx-tag:#286E69;--tx-quote:#4F6A89;--tx-code:#7F5326;--tx-num:#1F6585;--tx-link-line:#82B6CA;color-scheme:light}
+html[data-time="night"][data-skin="coast"]{--paper:#18262F;--surface:#223642;--raised:#2C4350;--ink:#E9F3F2;--ink-2:#B4C8CC;--line:#34495A;--edge:#6A8A99;--mark:#A4D9F0;--rail:#A4D1C4;--plate:#E7CA92;--on-plate:#18262F;--lamp:#E7CA92;--on-lamp:#18262F;--sakura:#D88C7A;--leaf:#8FB5A6;--wood:#B89268;--shadow:#0E1820;--glow:#E7CA9240;--lift:inset 0 2px 0 var(--glow);--code-bg:#142630;--on-code:#E7F6F5;--tx-3:#B4C8CC;--tx-link:#A4D9F0;--tx-em:#A4D9F0;--tx-tag:#A4D1C4;--tx-quote:#BDCFED;--tx-code:#F5C19C;--tx-num:#E7CA92;--tx-link-line:#628DA2;color-scheme:dark}
+html[data-skin="observatory"]{--paper:#172235;--surface:#202F48;--raised:#2B3B57;--ink:#EEEEF2;--ink-2:#C4C9D7;--line:#35445E;--edge:#7A87A3;--mark:#B8D9F4;--rail:#B2D0C6;--plate:#E4BF87;--on-plate:#172235;--lamp:#E4BF87;--on-lamp:#172235;--sakura:#D0C2E8;--leaf:#B2D0C6;--wood:#C6A16C;--shadow:#0F1828;--glow:#E4BF8733;--lift:inset 0 2px 0 var(--glow);--code-bg:#121B2E;--on-code:#E7EDF7;--tx-3:#C4C9D7;--tx-link:#B8D9F4;--tx-em:#B8D9F4;--tx-tag:#B2D0C6;--tx-quote:#D0C2E8;--tx-code:#F0B7A1;--tx-num:#E4BF87;--tx-link-line:#738CA9;color-scheme:dark}
+html[data-time="night"][data-skin="observatory"]{--paper:#101A2C;--surface:#19263D;--raised:#243450;--ink:#E9EAF0;--ink-2:#BDC4D4;--line:#2E3C55;--edge:#62708C;--mark:#AED1F2;--rail:#AFCBC2;--plate:#DDBD8C;--on-plate:#101A2C;--lamp:#DDBD8C;--on-lamp:#101A2C;--sakura:#D0C2E8;--leaf:#B2D0C6;--wood:#C6A16C;--shadow:#080E1A;--glow:#DDBD8C33;--lift:inset 0 2px 0 var(--glow);--code-bg:#0C1424;--on-code:#E5EBF6;--tx-3:#BDC4D4;--tx-link:#AED1F2;--tx-em:#AED1F2;--tx-tag:#AFCBC2;--tx-quote:#CBBCE8;--tx-code:#ECB69F;--tx-num:#DDBD8C;--tx-link-line:#617E9F;color-scheme:dark}
+html[data-skin="farm"]{--paper:#EEF1DC;--surface:#FFF8E6;--raised:#F1E3BD;--ink:#3E3124;--ink-2:#65523C;--line:#DECCA0;--edge:#8D6B45;--mark:#276B43;--rail:#4F6A3A;--plate:#644832;--on-plate:#FFF8E6;--lamp:#FFD23F;--on-lamp:#3E3124;--sakura:#FF9EC4;--leaf:#5AAE46;--wood:#A9682F;--shadow:#C9B68E;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#2B1D0E;--on-code:#FFF8E6;--tx-3:#65523C;--tx-link:#276B43;--tx-em:#A8346A;--tx-tag:#276B43;--tx-quote:#6E5297;--tx-code:#8F4A1B;--tx-num:#276B43;--tx-link-line:#8FCB6B;color-scheme:light}
+html[data-skin="farm"][data-season="summer"]{--paper:#E6F0EC;--surface:#FFF8E6;--raised:#F1E3BD;--ink:#3E3124;--ink-2:#65523C;--line:#DECCA0;--edge:#8D6B45;--mark:#155E96;--rail:#4F6A3A;--plate:#644832;--on-plate:#FFF8E6;--lamp:#FFD23F;--on-lamp:#3E3124;--sakura:#FF9EC4;--leaf:#5AAE46;--wood:#A9682F;--shadow:#C9B68E;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#2B1D0E;--on-code:#FFF8E6;--tx-3:#65523C;--tx-link:#155E96;--tx-em:#A2440C;--tx-tag:#35703C;--tx-quote:#415E7E;--tx-code:#8F4A1B;--tx-num:#155E96;--tx-link-line:#7EC8F0;color-scheme:light}
+html[data-skin="farm"][data-season="autumn"]{--paper:#F5E8D2;--surface:#FFF8E6;--raised:#F1E3BD;--ink:#3E3124;--ink-2:#65523C;--line:#DECCA0;--edge:#8D6B45;--mark:#9A4E2A;--rail:#4F6A3A;--plate:#644832;--on-plate:#FFF8E6;--lamp:#FFD23F;--on-lamp:#3E3124;--sakura:#FF9EC4;--leaf:#5AAE46;--wood:#A9682F;--shadow:#C9B68E;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#2B1D0E;--on-code:#FFF8E6;--tx-3:#65523C;--tx-link:#9A4E2A;--tx-em:#8C3B12;--tx-tag:#7A5E10;--tx-quote:#6B4A6B;--tx-code:#7F3E12;--tx-num:#9A4E2A;--tx-link-line:#E8A33D;color-scheme:light}
+html[data-skin="farm"][data-season="winter"]{--paper:#ECF0F1;--surface:#FFF8E6;--raised:#F1E3BD;--ink:#3E3124;--ink-2:#65523C;--line:#DECCA0;--edge:#8D6B45;--mark:#335F7C;--rail:#4F6A3A;--plate:#644832;--on-plate:#FFF8E6;--lamp:#FFD23F;--on-lamp:#3E3124;--sakura:#FF9EC4;--leaf:#5AAE46;--wood:#A9682F;--shadow:#C9B68E;--glow:transparent;--lift:2px 2px 0 var(--shadow);--code-bg:#2B1D0E;--on-code:#FFF8E6;--tx-3:#5F5F67;--tx-link:#335F7C;--tx-em:#4A5A68;--tx-tag:#45667A;--tx-quote:#4C5C7E;--tx-code:#55667A;--tx-num:#335F7C;--tx-link-line:#9DBECB;color-scheme:light}
+html[data-time="night"][data-skin="farm"]{--paper:#1C251F;--surface:#283126;--raised:#343F31;--ink:#F3E8CE;--ink-2:#C6BEA5;--line:#45503D;--edge:#7A8A6E;--mark:#9FD9F5;--rail:#A0B575;--plate:#DDBC70;--on-plate:#1C251F;--lamp:#DDBC70;--on-lamp:#1C251F;--sakura:#FF9EC4;--leaf:#9FD98F;--wood:#C98A4B;--shadow:#0F1511;--glow:#DDBC7033;--lift:inset 0 2px 0 var(--glow);--code-bg:#141B16;--on-code:#F3E8CE;--tx-3:#C6BEA5;--tx-link:#9FD9F5;--tx-em:#FFD54A;--tx-tag:#9FD98F;--tx-quote:#C9B3E8;--tx-code:#F0A890;--tx-num:#FFD54A;--tx-link-line:#5B8DD9;color-scheme:dark}
+:root{--cream:var(--surface);--cream-2:var(--raised);--cream-3:var(--line);--timber:var(--edge);--timber-light:var(--line);--timber-top:var(--raised);--moss:var(--rail);--pixel-shadow:var(--shadow);--gold:var(--raised);--gold-2:var(--mark);--gold-3:var(--lamp);--wood-a:var(--raised);--wood-b:var(--edge);--wood-c:var(--edge);--frame:var(--edge);--reading-surface:var(--surface);--reading-muted:var(--raised);--accent:var(--raised);--accent-2:var(--mark);--tx:var(--ink);--tx-2:var(--ink-2);--link-accent:var(--tx-link-line);--sky-b:var(--paper);--focus:var(--ink)}
+
+/* ===== 字体（说明位，真正的接入在根目录 font.css） =====
+   Fusion Pixel Font 12px proportional zh_hans，OFL-1.1，可子集化。
+   不用 Zpix：授权禁止转换格式与子集化，只能整包挂 ttf（2 万+ 字）。
+   ⚠️ 颜色不在这里定义：全部角色变量与旧名映射由上一段 PALETTE.css() 生成（build/palette.js）。
+      这一块只留非颜色令牌 —— check-spacing.js 读源码里第一个行首的 :root 块，它必须还在。 */
+:root{
+  --pix:'FusionPixel','Zpix','Silkscreen',"Courier New",ui-monospace,monospace;
+  /* 阅读字（V20 第 4 节）：会折行或被截断的描述、文章正文用它；像素字只写一行以内的招牌类信息。 */
+  --read:"PingFang SC","HarmonyOS Sans SC","MiSans","Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif;
+  /* ===== 间距刻度（2026-09-21 立）=====
+     这站最细的网格是 2px（2px 边框 / 2px 像素阴影 / steps(2) 步进 / 16px 图标），
+     所以规矩分两层：
+       · 布局级（面板、卡片、木牌、工具栏、页脚、栅格、导航）→ **4 的倍数**，用下面这几档；
+       · 组件内部（标签、按钮内边距、图标旁微调）→ 2 的倍数即可，允许刻意的 3px。
+     以前 134 处间距声明里 112 处是奇数（3/5/7/9/11/13），木牌边缘落在半像素上会发虚。
+     ⚠️ 纯几何量，**四季块和 night 块里不要覆盖**；改这些值要同步跑 build/check-spacing.js。 */
+  --s1:4px;  --s2:8px;  --s3:12px; --s4:16px; --s5:20px;
+  --s6:24px; --s7:28px; --s8:32px; --s9:48px;   /* --s9 留给区块级大间距，暂时备用 */
+}
+*{box-sizing:border-box}
+/* 纸色同时铺在 html 上：画布底色由根元素决定，只写 body 的话页面底部以下
+   夜里会露出 color-scheme:dark 的黑画布、白天露出白画布。 */
+html{scroll-behavior:smooth;background:var(--paper)}
+body{
+  margin:0; font-family:var(--pix); color:var(--ink);
+  /* ⚠️ font-size 必须显式写在 body 上。以前这里是裸的，所有没单独设字号的
+     元素全部落到浏览器默认 16px —— 而这只字体的设计尺寸是 12px，
+     16px = 把 12px 字形放大 1.333 倍（非整数倍），实测颜色种数从 5 飙到 18，
+     边缘全是半透明过渡，像素感糊掉。这就是「字体不是很好」的根源。
+     12 的整数倍（12/24/36…）才是干净的：24px 实测只有 3 种颜色，
+     每个设计像素正好占 2 屏幕像素，零插值。
+     探针实测：补上这一行，主页非 12 倍数的元素从 41 种降到 1 种。 */
+  font-size:12px;
+  /* V20：纸色实底，删掉渐变天空与 0.8 秒配色过渡 —— 昼夜切换时过渡会让深字压深底（第 3.6 节） */
+  background:var(--paper); min-height:100vh; overflow-x:hidden;
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='1' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='2' width='1' height='1' fill='%23FDF6E3'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='3' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='4' width='3' height='1' fill='%23FDF6E3'/%3E%3Crect x='4' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='5' width='4' height='1' fill='%23FDF6E3'/%3E%3Crect x='5' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='6' width='5' height='1' fill='%23FDF6E3'/%3E%3Crect x='6' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='7' width='6' height='1' fill='%23FDF6E3'/%3E%3Crect x='7' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='8' width='7' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='9' width='8' height='1' fill='%23FDF6E3'/%3E%3Crect x='9' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='10' width='6' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='10' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='10' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='11' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='12' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='13' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='14' width='2' height='1' fill='%23FDF6E3'/%3E%3Crect x='8' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='15' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3C/g%3E%3C/svg%3E") 0 0, auto;
+}
+/* 可点处用另一支箭头（CUR_B = 箭头 + 高亮描边，见文件顶部）。
+   ⚠️ 历史教训：这里曾经让普通态和可点态**共用同一张图**，理由是
+   "真正提示可点的是 pointer 兜底关键字"—— 那句话是错的。url() 一旦
+   加载成功，兜底关键字 pointer 根本不参与渲染，用户看到的两地完全一样，
+   划上去毫无反馈。柯西 2026-09-20 反馈"鼠标有点问题"就是指这个。
+   ⚠️ 热点必须跟上面那条一样是 0 0（箭头尖），否则划过可点区域时
+   指针会突然"跳"一下。
+   ⚠️ 选择器要列全：.soc / summary / .copy-code 这些**必须在这里出现**，
+   否则它们各自规则里的 cursor:pointer（特异性更高）会把像素光标顶掉，
+   那几处就又变回系统箭头了 —— 本站踩过这个坑。 */
+button,a,.tag,.tool,.cbtn,.soc,summary,.copy-code,.tl-card,.rcard,.gal-card,
+.sbtn,.share-btn,.music-seek{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='1' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='2' width='1' height='1' fill='%23F5D259'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='3' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='4' width='3' height='1' fill='%23F5D259'/%3E%3Crect x='4' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='5' width='4' height='1' fill='%23F5D259'/%3E%3Crect x='5' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='6' width='5' height='1' fill='%23F5D259'/%3E%3Crect x='6' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='7' width='6' height='1' fill='%23F5D259'/%3E%3Crect x='7' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='8' width='7' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='9' width='8' height='1' fill='%23F5D259'/%3E%3Crect x='9' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='10' width='6' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='10' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='10' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='11' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='12' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='13' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='14' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='15' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3C/g%3E%3C/svg%3E") 0 0, pointer}
+
+/* ===== 图标 ===== */
+svg.ic{width:16px;height:16px;display:block;image-rendering:pixelated;flex:none}
+svg.ic.sm{width:12px;height:12px} svg.ic.xs{width:9px;height:9px} svg.ic.lg{width:30px;height:30px}
+
+/* ===== 内容槽 ===== */
+.slot{display:inline-block;vertical-align:middle;
+  background:repeating-linear-gradient(45deg,var(--sb) 0 5px,var(--sl) 5px 10px);border:2px solid var(--sbd)}
+.slot.cover{--sb:#9FD3EE;--sl:#D3ECF8;--sbd:#4A86AD}
+.slot.title{--sb:#BCE0A8;--sl:#E2F1D8;--sbd:#5C8C4A}
+.slot.meta {--sb:#F5DC9A;--sl:#FAECCE;--sbd:#A87A2C}
+.slot.body {--sb:#D8CFC0;--sl:#EAE3D8;--sbd:#7C6E58}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px 40px;position:relative;z-index:2}
+
+/* 搪瓷徽章（V20 第 3.5 节）：2px 控件边 + 面色 + 2px 实色落影；悬停浮起色，按下见 pixel-art.js 合并的 :active，
+   选中（.on）用站牌色。.cbtn 现在只剩热力图翻页键（外观设置里的季节／昼夜键随 V20 删了），材质只写在这一处。 */
+.cbtn{display:flex;flex-direction:column;align-items:center;gap:2px;
+  background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);
+  padding:5px 8px;font-family:inherit;color:var(--ink);
+  /* ⚠️ 必须显式给 .cbtn 写 font-size：<button> 的 UA 默认样式是 13.3333px，
+     只给里面的 em 写 12px 管不住按钮本身。13.3333 实测是全场最糊的一档
+     （36 种颜色）。 */
+  font-size:12px;
+  /* min-width：昼夜按钮只有一个图标 +「昼」字（列排），实测只有 12px 宽 ——
+     手指点不中。32px 也让它跟旁边带文字的四季按钮对齐（2026-09-21）。 */
+  min-width:32px;
+  transition:transform .1s steps(2),background .15s}
+.cbtn.on{background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+.cbtn em{font-style:normal;font-size:12px}
+
+/* 招牌里的联系徽章（V20 第 6.3 节）：品牌图标沿用 brands.js，放不下时折行。 */
+.social{display:flex;gap:8px;flex-wrap:wrap}
+/* 联系徽章是搪瓷徽章（V20 第 3.5 节）：40px 高；悬停浮起色（pixel-art.js），按下见那里合并的 :active。
+   ⚠️ 焦点框不再单写：全局 :focus-visible 的墨色框对所有底色都 ≥4.5:1（原来的 --gold 框映射后几乎看不见）。 */
+.soc{display:flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 12px;text-decoration:none;
+  background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);color:var(--ink);
+  transition:transform .1s steps(2),background .15s}
+.soc em{font-style:normal;font-size:12px;line-height:24px;white-space:nowrap}
+.soc .bico{width:20px;height:20px;flex:0 0 20px;display:block}
+/* 可复制的（邮箱 / 微信）：本质是 <button>，得把浏览器默认样式全部抹掉，
+   否则会出现系统灰底和默认字体，跟旁边两枚徽章不是一套皮。 */
+button.soc{font:inherit}
+button.soc .soc-in{display:flex;align-items:center;gap:8px}
+/* 账号未填的先显示成不可点状态，明显区别于可点的 */
+.soc.todo{opacity:.45;filter:grayscale(.7);cursor:not-allowed}
+/* 招牌底部的「号码提示条」：点邮箱/微信后就地弹出来，不用跳转。
+   固定贴在地图上方居中，不参与布局（避免把招牌顶高，触发布局检查）。 */
+.contact-tip{position:fixed;left:50%;bottom:66px;transform:translateX(-50%) translateY(8px);
+  z-index:400;display:flex;align-items:center;gap:8px;
+  background:var(--surface);color:var(--ink);border:2px solid var(--edge);
+  box-shadow:var(--lift);padding:9px 12px;
+  font-size:12px;letter-spacing:.4px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .14s,transform .14s}
+.contact-tip.on{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.contact-tip b{font-size:12px;font-weight:700;letter-spacing:.6px;
+  background:var(--raised);border:2px solid var(--edge);padding:3px 7px;user-select:all}
+.contact-tip span{color:var(--ink-2)}
+
+/* 键盘焦点：全局兜底（2026-09-21）。
+   此前只有 6 条选择器写了品牌化焦点样式（社交图标 / 工具按钮 / 宠物 / 音乐），
+   其余 15 个类名的可点元素 —— 时间线卡片、项目卡、相馆图、配色按钮、返回农场、
+   筛选标签、日历季节按钮 —— 只能吃浏览器默认的蓝框：跟木色像素边框不搭，
+   而且在深浅两种底色上不一定看得清。
+   用 var(--ink)：四季与夜里都定义过，且始终与所在那层底色成对比（check-colors 守着）。
+   ⚠️ 放在这里只是便于集中阅读，CSS 顺序不影响结果 —— 具体选择器（如 .tool:focus-visible）
+   优先级更高，会赢过这条兜底。 */
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+/* 导航落点：面板本身有 4px 边框 + 外发光，直接滚到顶会被顶部切掉一截 */
+#timeline,#projects,#gallery,#calendar,#skills,#ledger,#farm,#friends{scroll-margin-top:24px}
+/* 全局滚动条也像素化（2026-09-22，对标 pixel-portfolio 的 16px 木轨条）。
+   此前只有 .shelf 有，页面主滚动条是系统默认灰条，跟木色界面脱节。
+   ⚠️ .shelf::-webkit-scrollbar{height:8px} 特异性更高，不受影响。 */
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--wood-b) var(--cream-3)}
+::-webkit-scrollbar{width:16px;height:16px}
+::-webkit-scrollbar-track{background:var(--cream-3)}
+::-webkit-scrollbar-thumb{background:var(--wood-b);border:3px solid var(--ink)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== 面板 ===== */
+.layout{display:grid;grid-template-columns:1fr 300px;gap:24px;align-items:start}
+/* ⚠️ min-width:0 不能省。grid 的 1fr 隐含 min-width:auto = 内容的 min-content 宽度，
+   一遇到「横向滚动的一排卡片」这种超宽内容就会把整列撑开：
+   实测博物馆加进来后主栏被撑到 4142px，面板里居中排的东西全跑到视口外
+   （表现是「找不到」某个元素，其实它在 x=1993 的地方好好待着）。
+   给两栏都上 min-width:0，滚动才真正发生在 .shelf 内部。 */
+.layout > main,.layout > aside{min-width:0}
+/* 纸卡（V20 第 3.5 节）：面色 + 1px 细线 + --lift（浅色板 2px 硬投影，深色板灯笼色内高光）。
+   只有一层边：旧的 4px 墨框、内框、外投影、奶油横纹、挂钉都删了。面板材质只写在这一处。 */
+.panel{position:relative;background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift);
+  padding:var(--s6);margin-bottom:var(--s8)}
+/* 面板头（V20 第 6.11 节）：墨色像素 24／32 的招牌字，前面一枚 16px 图标；不加木牌底、不加粗（像素字假粗体会糊）。
+   ⚠️ 这里千万不能写 font:inherit 简写（注意别在注释里打反引号，
+   这段 CSS 活在一个 JS 模板字符串里，一个反引号就能把整段字符串提前收掉）——
+   font 简写会连 font-size 一起重置。只能单点写 font-family。 */
+.pt{display:flex;align-items:center;gap:var(--s3);width:100%;max-width:100%;margin:0 0 var(--s6);padding:0;
+  color:var(--ink);font-family:inherit;font-size:24px;line-height:32px;font-weight:normal}
+/* V21：面板头后面拉一条细线，把标题从「浮动文字」变成版面的起点。
+   只加在面板头这一处，子页面板吃同一条；线用 --line，深浅皮肤都跟着走。 */
+.pt::after{content:'';flex:1;height:1px;margin-left:var(--s2);background:var(--line)}
+
+/* ===== 时刻表（V20 第 6.7 节：文章面板、概览「最近写下」、博客列表页共用）=====
+   列：日期 ｜ 轴线站点 ｜ 标题块 ｜ 箭头。.tl-line 是贯穿各行的 4px 线路色竖线（与线路图同一条线），
+   left = 日期列 + 栏距 16 + 轴列一半 12 − 线宽一半 2，日期列变宽变窄时线始终穿过站点中心。
+   ⚠️ 轴是**真实元素**（.tl-line），不是 ::before：build/check-timeline.js 要量「轴心 vs 站点中心」的偏差。
+   ⚠️ 显式网格：删列里的元素必须同步改列定义（display:none 不占格位，2026-09-21 手机空条的根因）。
+   行里不放封面；日期列所有宽度都显示（日期是时刻表的第一列）。
+   z-index：竖线压在悬停行的浮起底色之上，站点又压在竖线之上，整行的透明点击层在最上面。 */
+.tlwrap{position:relative;--tl-date:72px}
+.tl{list-style:none;margin:0;padding:0}
+.tl-line{position:absolute;z-index:1;left:calc(var(--tl-date) + 26px);top:var(--s4);bottom:var(--s4);width:4px;background:var(--rail)}
+.tl-item{position:relative;display:grid;grid-template-columns:var(--tl-date) 24px minmax(0,1fr);column-gap:var(--s4);align-items:start}
+.tl-item+.tl-item{border-top:1px solid var(--line)}
+.tl-item:hover,.tl-item:focus-within{background:var(--raised)}
+.tl-when{display:flex;flex-direction:column;align-items:flex-end;padding-top:var(--s2)}
+.tl-when b{display:block;font-size:24px;line-height:32px;font-weight:normal;color:var(--tx-em);font-variant-numeric:tabular-nums}
+.tl-when i{display:block;font-style:normal;font-size:12px;line-height:24px;color:var(--tx-3)}
+.tl-axis{position:relative;z-index:1;display:flex;justify-content:center;padding-top:var(--s3)}
+.tl-dot{display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--surface);border:2px solid var(--rail)}
+.tl-card{display:grid;grid-template-columns:minmax(0,1fr) 16px;gap:var(--s4);align-items:center;padding:var(--s3) var(--s4);
+  text-decoration:none;color:inherit}
+/* 整行可点：透明层把链接的可点区域铺满整行（相对 .tl-item 定位） */
+.tl-card::after{content:'';position:absolute;z-index:2;inset:0}
+.tl-body{display:flex;flex-direction:column;gap:var(--s1);min-width:0}
+.tl-title{display:block;font-family:var(--read);font-size:16px;line-height:26px;font-weight:600;color:var(--ink)}
+.tl-exc{margin:0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tl-tags{display:flex;flex-wrap:wrap;gap:var(--s1);margin-top:var(--s1)}
+/* 标签是像素 12 芯片：浮起色底、无边框、标签色字；图标（TAG_ICON）与字之间留 4px。 */
+.tl-tag{display:inline-flex;align-items:center;gap:4px;padding:0 6px;font-size:12px;line-height:24px;
+  background:var(--raised);color:var(--tx-tag)}
+.tl-item:hover .tl-tag,.tl-item:focus-within .tl-tag{background:var(--surface)}
+.tl-go{transition:transform .12s steps(2)}
+.tl-item:hover .tl-go{transform:translateX(4px)}
+/* 最近一篇稍大：它是「最近发生的」，不是「置顶的」，只把标题放大一档 */
+.tl-item.lead .tl-title{font-size:18px;line-height:28px}
+/* ===== 页脚站台（V20 第 6.13、6.14 节）=====
+   直接放在纸色上、不是卡片。.platform / .platform-row / .hotbar 三层都不加左右内边距和边框：
+   761px 视口的内容宽只有 713，10 格一行要 712（10 × 64 + 9 × 8），多 1px 就撑出横向滚动。
+   格宽上限 64、可以缩：有 16px 占位滚动条时 761–775px 窗口每格缩到约 62.5px，而不是撑出页面。
+   ≤760（下一条 @media）快捷栏排 5 × 2、致谢与车票纵排；≤430 车票数字降到 12（第 6.10 节那个 @media 块）。 */
+.platform{margin-top:var(--s8)}
+/* 铁轨：上下两条 2px 控件边钢轨 + 木色枕木，舞台之外唯一的风景元素 */
+.platform-rail{height:16px;margin-bottom:var(--s6);border-top:2px solid var(--edge);border-bottom:2px solid var(--edge);
+  background:repeating-linear-gradient(90deg,var(--wood) 0 8px,transparent 8px 24px)}
+.platform-bar{display:grid;grid-template-columns:1fr auto 1fr;grid-template-areas:"l bar r";align-items:end;gap:var(--s4)}
+.platform-bar>.planter{grid-area:l;justify-self:start}
+.platform-bar>.hotbar{grid-area:bar}
+.platform-bar>.pet{grid-area:r;justify-self:end}
+/* ≤1080：快捷栏独占第一行，花箱与小鸡同排在它下方（一行至少约 900px，768 档放不下三块） */
+@media (max-width:1080px){.platform-bar{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "l r"}}
+.hotbar{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,64px);gap:var(--s2);justify-content:center}
+/* 快捷栏格：物品栏格子（面色底、2px 控件边、下沿一道浮起色），名称常显；当前页那格用站牌色 */
+.hb{display:flex;flex-direction:column;align-items:center;justify-content:center;height:64px;min-width:0;
+  background:var(--surface);border:2px solid var(--edge);box-shadow:inset 0 -4px 0 var(--raised);
+  color:var(--ink);text-decoration:none;font-size:12px;line-height:24px;white-space:nowrap}
+.hb:hover{background:var(--raised)}
+.hb[aria-current="page"]{background:var(--plate);color:var(--on-plate);border-color:var(--plate);box-shadow:none}
+.ic.x2{width:32px;height:32px}
+/* ≤360：2px 边框的纵向弹性盒，2 + 16 + 24 + 2 = 44 正好装下图标与名称（第 6.13 节 v5，评审 S4） */
+@media (max-width:360px){.hb{height:44px}.hb .ic{width:16px;height:16px}}
+.platform-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s4);margin-top:var(--s6)}
+/* 访客车票：放在纸色上，缺口色是纸色；文字像素 12、次墨，数字像素 24、强调色 */
+.platform .ticket{--notch:var(--paper);margin:0;padding:var(--s2) var(--s4);font-size:12px;line-height:24px;color:var(--ink-2)}
+.platform .ticket b{font-size:24px;line-height:32px;font-weight:normal;color:var(--mark)}
+/* 致谢靠右：车票还没回填（或离线不出现）时也不跑到左边 */
+.site-links{margin:0 0 0 auto;text-align:center;font-size:12px;line-height:24px;color:var(--ink-2)}
+.site-links a{color:var(--tx-link);text-underline-offset:4px;white-space:nowrap}
+@media (max-width:760px){
+  .tlwrap{--tl-date:64px}
+  .hotbar{grid-auto-flow:row;grid-template-columns:repeat(5,minmax(0,1fr))}
+  .platform-meta{flex-direction:column}.site-links{margin:0}
+  .contact-tip{bottom:22px;max-width:calc(100vw - 24px)}
+}
+.ov-h{display:flex;align-items:center;gap:var(--s2);margin:0 0 var(--s2);font-size:12px;line-height:24px;font-weight:normal;color:var(--ink-2)}
+/* V21 概览的「精选项目」索引：三行文字，不做卡片（概览是目录，工坊才是正片）。
+   名称像素 12、说明阅读字 14，右侧 play 作行末指示；行间 1px 细线与时刻表同一套。 */
+.ovpj{list-style:none;margin:0 0 var(--s4);padding:0;border-top:1px solid var(--line)}
+.ovpj li+li{border-top:1px solid var(--line)}
+.ovpj a{display:flex;align-items:center;gap:var(--s3);padding:var(--s2) 0;color:var(--ink);text-decoration:none}
+.ovpj b{flex:none;width:156px;font-weight:normal;font-size:12px;line-height:24px}
+.ovpj span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+.ovpj a:hover b{text-decoration:underline;text-underline-offset:4px}
+.more{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:var(--s4)}
+.more a{color:inherit;text-decoration:none;font-size:12px;
+  border-bottom:2px solid var(--rail);padding-bottom:1px}
+.more a:hover{background:var(--raised)}
+
+/* ===== 仓库卡与友链卡（V20 第 6.9、6.11 节）=====
+   首页工坊固定 3 个仓库：**显式** 3 列（auto-fill 会在 1920 屏多出空的第 4 列）；友情站 2 列；≤760 都单列。
+   卡片是纸卡：名称像素 12（仓库名每天从 GitHub 同步、长度没有上限，所有宽度都用 12）、简介阅读 14 两行截断。 */
+.rgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s4)}
+/* 友情站网格：友链卡没有语言色点和日期，两列比工坊的三列透气 */
+.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rcard{display:flex;flex-direction:column;gap:var(--s2);padding:var(--s4);text-decoration:none;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift);transition:background .12s}
+.rcard:hover{background:var(--raised)}
+.rcard.blank{background:var(--raised)}
+.rc-h{display:flex;align-items:center;gap:var(--s2)}
+.rc-h b{font-size:12px;line-height:24px;font-weight:normal;word-break:break-all}
+.rc-d{margin:0;min-height:44px;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rc-f{display:flex;align-items:center;gap:var(--s2);margin-top:auto;padding-top:var(--s2);border-top:1px solid var(--line);
+  font-size:12px;line-height:24px;color:var(--ink-2)}
+/* 语言色块是 GitHub 给的语言色（信息），8×8 方块 */
+.rc-l{width:8px;height:8px;flex:none}
+.rc-f em{font-style:normal}
+.rc-none{color:var(--ink-2)}
+.rc-t{margin-left:auto;font-variant-numeric:tabular-nums}
+.rfoot{display:flex;align-items:center;justify-content:flex-start;gap:var(--s2);margin-top:var(--s4);font-size:12px;line-height:24px;color:var(--ink-2)}
+
+/* 专精面板底部的「代码构成」说明。次要文字一律靠颜色降级（--ink-2），不靠透明度（V20 第 4 节）。 */
+.gfoot{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:2px;font-size:12px;color:var(--ink-2)}
+.rfoot .sfx,.gfoot .sfx{letter-spacing:.4px}
+
+/* 工坊·贡献热力图：可翻页（‹ › 换四周）+ 悬浮/方向键看某一天。
+   ⚠️ **不新增宽度档位** —— 断点预算是精确棘轮，一律用 width:min() 流式收放。
+   ⚠️ 深浅用线路色 --rail 加透明度调，不引入新颜色 token；11 套色板各自定义 --rail，这里自动跟随，不写夜间规则。
+      浅档要能跟面板底拉开 3:1 的对比度（WCAG 1.4.11），check-colors.js 逐套核算。 */
+.cblock{margin-top:16px;text-align:center;position:relative}
+.chead{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;margin:0;font-size:12px;letter-spacing:.4px;color:var(--ink-2)}
+.chead b{font-weight:500;color:var(--rail);font-variant-numeric:tabular-nums}
+.chead .sfx{white-space:nowrap}
+.chead .sfx+.sfx::before{content:'·';margin-right:7px}
+.cbar{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:12px 0 6px;font-size:12px}
+/* 翻页键的材质（搪瓷徽章）写在上面外观设置那条 .cbtn 里，这里只管几何。 */
+.cbtn{display:flex;align-items:center;justify-content:center;flex:none;width:32px;height:32px;padding:0}
+  /* ⚠️ 这里以前写着 cursor:pointer —— 它是「.cbtn」（0,1,0），比文件前面那条
+     可点态像素光标规则「button,…,.cbtn」（同为 0,1,0）**出现得更晚**，于是赢下级联，
+     季节/昼夜/翻页这几个按钮悄悄变回系统箭头。base 的 button 规则已经给了像素光标，
+     这里必须留空。守门：build/check-cursor.js 第 3 条（不许有裸 cursor:pointer）。 */
+.cbtn:not(.on):hover:not(:disabled){background:var(--raised)}
+.cbtn:focus-visible{outline:2px solid var(--rail);outline-offset:1px}
+.cbtn:disabled{opacity:.35;cursor:default;box-shadow:none}
+.cbtn[data-page="prev"] .ic{transform:scaleX(-1)}
+.crange{margin:0;display:flex;align-items:center;gap:5px;font-variant-numeric:tabular-nums;letter-spacing:.4px;color:var(--ink-2)}
+.cpage{margin:0;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.ctable{width:min(238px,100%);margin:0 auto}
+.cdow{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:4px;font-size:12px;color:var(--ink-2)}
+.cgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cmonth{grid-column:1/-1;margin:7px 0 2px;font-size:12px;text-align:left;color:var(--ink-2)}
+.cmonth:first-child{margin-top:0}
+/* 残周补位的那天（-1，还不存在）**不渲染**：末尾那列自然空着，
+   和补一个透明占位格一模一样，却省掉一类死规则。 */
+/* 色阶（V20 第 6.9 节）：空格子浮起色，有贡献的格子是线路色叠 .76／.84／.92／1 —— 最浅一档在 11 套色板上对面色都 ≥3:1。 */
+.ccell{aspect-ratio:1;background:var(--raised);outline:0}
+.ccell.lv1{background:var(--rail);opacity:.76}
+.ccell.lv2{background:var(--rail);opacity:.84}
+.ccell.lv3{background:var(--rail);opacity:.92}
+.ccell.lv4{background:var(--rail)}
+.ccell:focus-visible{box-shadow:0 0 0 2px var(--rail)}
+/* 悬停提示是票据材质（V20 第 3.5 节）：浮在任意内容上，不挖缺口。 */
+.ctip{position:absolute;z-index:5;left:0;top:0;padding:3px 6px;font-size:12px;white-space:nowrap;pointer-events:none;
+  color:var(--ink);background:var(--surface);border:2px solid var(--edge);box-shadow:var(--lift)}
+.ctip:not(.on){display:none}
+.cnote{margin:var(--s2) 0 0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+
+/* 专精：语言构成条（V20 第 6.11 节）。名称像素 12 墨色、等级条 8px（轨道浮起色、填充线路色）、数值像素 12 次墨。 */
+.stack{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.stack li{display:flex;align-items:center;gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid var(--line)}
+.stack em{font-style:normal;font-size:12px;line-height:24px;min-width:96px;color:var(--ink)}
+.tbar{flex:1;height:8px;background:var(--raised)}
+.tbar b{display:block;height:100%;background:var(--rail)}
+.stack u{text-decoration:none;font-size:12px;line-height:24px;min-width:48px;text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+
+
+/* ===== 相馆 ===== */
+/* 等高一条排：主页只做缩略陈列（高 96px = 12 的倍数，宽按原始比例），
+   **不裁图** —— 裁剪是子页灯箱之外唯一会破坏构图的事。
+   flex-wrap 兜底：窄屏摆不下就折行，绝不用 overflow-x 把照片藏进滚动条。 */
+.gstrip{display:flex;gap:var(--s4);flex-wrap:wrap;justify-content:flex-start;align-items:flex-start}
+/* 每张缩略图是一张纸卡细边的相纸（V20 第 6.11 节），底边留宽一点；说明在 title 里，悬停／聚焦时出现。 */
+.gstrip .gp{display:block;line-height:0;padding:var(--s1) var(--s1) var(--s3);
+  background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift);
+  transition:transform .12s steps(2),background .12s}
+.gstrip .gp:hover{transform:translateY(-4px);background:var(--raised)}
+.gstrip img{height:120px;width:auto;display:block;image-rendering:auto}
+
+/* ===== 车票（V20 第 3.5 节）：面色 + 2px 控件边，左右各一个 6×8 方形缺口 =====
+   缺口用伪元素画两块与底色相同的小方块盖住边框，不用 clip-path —— clip-path 会连同车票里
+   链接的焦点框一起裁掉。--notch 是车票所在的底色（首页主栏卡里是面色）。 */
+.ticket{position:relative;--notch:var(--surface);background:var(--surface);border:2px solid var(--edge)}
+.ticket::before,.ticket::after{content:'';position:absolute;top:50%;width:6px;height:8px;margin-top:-4px;background:var(--notch)}
+.ticket::before{left:-2px}.ticket::after{right:-2px}
+/* 概览计数（第 6.10 节）：一张车票三段，撕线分隔；z-index 让段落的焦点框画在缺口之上。 */
+.counts{display:flex;margin:0 0 var(--s6)}
+.counts>a{flex:1;position:relative;z-index:1;display:flex;align-items:baseline;justify-content:center;gap:var(--s2);
+  padding:var(--s3) var(--s4);color:var(--ink-2);text-decoration:none;font-size:12px;line-height:24px}
+.counts>a+a{border-left:1px dashed var(--edge)}
+.counts b{font-size:24px;line-height:32px;font-weight:normal;color:var(--mark)}
+.counts>a:hover span{text-decoration:underline;text-underline-offset:4px}
+/* ≤430（第 6.7、6.10 节）：车票三段竖排；时刻表收紧非正文列、去掉箭头列，390 屏标题列还有约 220px。 */
+@media (max-width:430px){
+  .counts{flex-direction:column}.counts>a+a{border-left:0;border-top:1px dashed var(--edge)}
+  .tlwrap{--tl-date:48px}
+  .tl-when b{font-size:12px;line-height:24px}
+  .tl-item{grid-template-columns:var(--tl-date) 16px minmax(0,1fr);column-gap:var(--s2)}
+  .tl-line{left:calc(var(--tl-date) + 14px)}
+  .tl-dot{width:16px;height:16px}
+  .tl-card{grid-template-columns:minmax(0,1fr);padding:var(--s2) var(--s3)}
+  /* 带上 .tl-card 前缀：svg.ic{display:block}（0,1,1）比单个类名高，单写 .tl-go 藏不掉箭头 */
+  .tl-card .tl-go{display:none}
+  /* 页脚访客车票：五位浏览量 + 四位访客数在 320 屏也放得下（第 6.14 节） */
+  .platform .ticket b{font-size:12px;line-height:24px}
+}
+
+/* ===== 季节日历的四季格（按钮材质在 farm-modules.js 的 #calendar .se）===== */
+.seasons{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+
+/* ===== 博物馆：书架（V20 第 6.8 节）=====
+   网格格子并排，封面按自然比例贴底站在 4px 木板上；column-gap:0 让相邻格子的木板连成一整条搁板。
+   不再横向滚动（硬约束：面板里不用 overflow-x:auto）；check-home-museum.js 读 .shelf 的 scrollLeft，网格下恒为 0。 */
+.shelf-bar{display:flex;gap:4px;margin-bottom:8px}
+/* 分类键是搪瓷徽章，计数 <i> 是芯片（V20 第 6.15 节）。选中用线路色而不是站牌色：
+   夜间色板的站牌色就是灯笼黄，博物馆里不许出现黄色框框（硬约束，覆盖第 6.8 节「按下态用站牌色」）。 */
+.shelf-tab{display:flex;align-items:center;gap:4px;font:inherit;
+  background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:4px 8px;color:var(--ink)}
+.shelf-tab em{font-style:normal;font-size:12px}
+.shelf-tab i{font-style:normal;font-size:12px;background:var(--raised);color:var(--tx-tag);
+  padding:0 4px}
+.shelf-tab:hover{background:var(--raised)}
+.shelf-tab.on{background:var(--rail);color:var(--surface);border-color:var(--rail)}
+.shelf-tab.on i{background:var(--surface);color:var(--ink)}
+.shelf{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));
+  column-gap:0;row-gap:var(--s6)}
+/* 2026-09-15 柯西：**不要黄色框框**。封面不裹底板、不加边框和阴影，直接站在木板上；
+   木板色 --wood 是棕色装饰，不承担文字；任何地方都不出现灯笼黄。 */
+.exc{min-width:0}
+.exc[hidden]{display:none!important}
+.shelf-status{margin:8px 0;text-align:center;font-size:12px;color:var(--tx-3)}
+/* 同一行格子被网格拉成等高，a 撑满格子，封面区占掉标题以上的全部高度、贴底对齐。 */
+.exc > a{display:flex;flex-direction:column;height:100%;text-decoration:none;color:inherit}
+.exc .poster{flex:1;display:flex;align-items:flex-end;justify-content:center;padding:0 var(--s2);border-bottom:4px solid var(--wood)}
+.exc .poster img{display:block;max-width:100%;height:auto}
+.exc .poster.blank{min-height:120px;align-items:center}
+/* 说明固定两行（阅读字 14／22，各一行省略号）：标题 600 墨色；第二行星级 + 一项元信息，次墨。 */
+.exc .tx{display:block;padding:var(--s2) var(--s2) 0}
+.exc .t,.exc .m{display:block;font-family:var(--read);font-size:14px;line-height:22px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.exc .t{font-weight:600;color:var(--ink)}
+/* 标题里的游戏图标（GAME_ICON，见 game-data.js）跟着文字走，压着基线 */
+.exc .t svg.ic{display:inline-block;vertical-align:-1px;margin-right:4px}
+.exc .m{min-height:22px;font-style:normal;color:var(--ink-2)}
+.exc .st{margin-right:4px;letter-spacing:1px;color:var(--tx-em)}
+.exc > a:hover .t{text-decoration:underline;text-underline-offset:4px}
+.shelf-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:var(--s2);margin-top:var(--s1);
+  font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+.museum-zone + .museum-zone{margin-top:20px;padding-top:18px;border-top:3px dashed var(--wood-b)}
+.museum-zone-title{display:flex;align-items:center;gap:6px;margin:0 0 9px;font-size:12px;font-weight:normal;letter-spacing:1px}
+.museum-more{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:9px;font-size:12px}
+.museum-more a{color:inherit;text-decoration:none;border-bottom:2px solid var(--rail);padding-bottom:1px}
+.museum-more a:hover{background:var(--raised)}
+
+/* 博物馆详情页：390 件馆藏按 24 件一页渲染，避免一次加载几百张封面。 */
+
+.museum-page{max-width:none;margin:0 auto 32px}
+.museum-filters{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.museum-filter{display:flex;align-items:center;gap:5px;font:inherit;font-size:12px;color:var(--ink);
+  background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:5px 9px}
+.museum-filter i{font-style:normal;background:var(--raised);color:var(--tx-tag);padding:0 4px}
+.museum-filter:hover{background:var(--raised)}
+.museum-filter.on{background:var(--rail);color:var(--surface);border-color:var(--rail)}
+.museum-filter.on i{background:var(--surface);color:var(--ink)}
+/* 状态行是短信息，像素 12（check-museum.js、check-workshop.js 读它的文字）；来源说明会折行，用阅读字（第 4 节）。
+   次要文字靠颜色降级，不靠透明度。 */
+.museum-status{font-size:12px;line-height:24px;color:var(--ink-2)}
+.museum-note,.page-note{font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+/* 夜间色板（与星夜昼）的站牌色是灯笼黄：博物馆子页里凡是用站牌色的（标题站牌、外观设置选中键、快捷栏当前格）
+   改用线路色 —— 博物馆里不要黄色框框（硬约束）。面色对线路色在 11 套色板里都 ≥4.5:1。 */
+body.is-museum-page{--plate:var(--rail);--on-plate:var(--surface)}
+/* 博物馆子页的书架（第 6.8 节）：与首页 .shelf 同一套木板 —— 格子被网格拉成等高，封面按自然比例贴底站在 4px 木板上，
+   column-gap:0 让相邻格子的木板连成一整条搁板。说明固定两行：标题一行 + 元信息一行（detail 与来源已并进元信息）。 */
+.museum-grid{list-style:none;margin:12px 0 18px;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(144px,1fr));column-gap:0;row-gap:var(--s6)}
+.museum-item{min-width:0}
+.museum-item-link{height:100%;display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.museum-item-poster{flex:1;display:flex;align-items:flex-end;justify-content:center;width:100%;padding:0 var(--s2);border-bottom:4px solid var(--wood)}
+.museum-item-poster img{display:block;max-width:100%;height:auto}
+.museum-item-text{display:block;min-width:0;padding:var(--s2) var(--s2) 0}
+.museum-item-title,.museum-item-meta{display:block;font-family:var(--read);font-size:14px;line-height:22px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.museum-item-title{font-weight:600;color:var(--ink)}
+/* 标题前的游戏图标（GAME_ICON）跟着文字走，压着基线 */
+.museum-item-title svg.ic{display:inline-block;vertical-align:-1px;margin-right:4px}
+.museum-item-meta{min-height:22px;font-style:normal;color:var(--ink-2)}
+a.museum-item-link:hover .museum-item-title{text-decoration:underline;text-underline-offset:4px}
+.museum-pager{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0 14px}
+.museum-page-btn{font:inherit;font-size:12px;color:var(--ink);background:var(--surface);
+  border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:6px 12px}
+.museum-page-btn:hover:not(:disabled){background:var(--raised)}
+.museum-page-btn:disabled{opacity:.35}
+.museum-page-info{font-size:12px;min-width:72px;text-align:center}
+
+/* 工坊详情页：全部仓库。沿用博物馆详情页的筛选/翻页控件（一个站点只用一套交互），
+   但卡片是"仓库"不是"封面"，所以单独一套 .wcard —— 仓库没有图，硬套封面格子会空一大块。 */
+/* 仓库列表显式列数（第 6.9 节）：一页 4 个正好一行；≤1080 两列、≤760 单列（写在 pixel-art.js 现有的两个 @media 块里，排在本条之后）。
+   auto-fill 在 1920 屏会多出空的第 5 列。卡片是仓库卡同一套纸卡：名称像素 12、简介阅读 14 两行截断、页脚像素 12。 */
+.wgrid{list-style:none;margin:12px 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s4)}
+.wcard{min-width:0}
+.wcard-link{height:100%;display:flex;flex-direction:column;gap:var(--s2);padding:var(--s4);text-decoration:none;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift);transition:background .12s}
+a.wcard-link:hover{background:var(--raised)}
+.wcard-head{display:flex;align-items:center;gap:var(--s2)}
+.wcard-name{font-size:12px;line-height:24px;font-weight:normal;word-break:break-all}
+.wcard-desc{font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2);min-height:44px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.wcard-topics{display:flex;flex-wrap:wrap;gap:4px}
+/* 话题是芯片（V20 第 6.15 节）：浮起色底、无边框、标签色字 */
+.wcard-topic{font-style:normal;font-size:12px;line-height:24px;background:var(--raised);color:var(--tx-tag);padding:0 8px}
+a.wcard-link:hover .wcard-topic{background:var(--surface)}
+.wcard-foot{display:flex;align-items:center;gap:var(--s2);font-size:12px;line-height:24px;color:var(--ink-2);margin-top:auto}
+/* 语言色块 8×8 方块（GitHub 给的语言色，是信息），与首页仓库卡 .rc-l 同一做法 */
+.wcard-lang{width:8px;height:8px;flex:none}
+.wcard-langname,.wcard-star{font-style:normal;text-decoration:none}
+.wcard-date{margin-left:auto;font-variant-numeric:tabular-nums}
+
+/* ===== 宠物：已移除（2026-09-17 柯西要求）=====
+   原来这里养着一只荔宝（柯西家的猫）当"跟班"，追着鼠标跑。
+   柯西要求「不要现在的宠物系统了」，整块（CSS + DOM + 跟随逻辑）已删除。
+   光标也不再是荔宝，换成 icons.js 里的像素箭头。
+
+   ⚠️ 为什么删除而不是注释掉：留着会误以为还在用；
+     万一以后要还原，看 git 记录即可（这一段有完整注释）。
+   荔宝的图标数据本身（icons.js 的 libao / libao_b / libao_c）**保留** ——
+   站内别处当装饰用，删了会连带断掉图标 sprite。 */
+
+/* ===== 文章页（posts/*.html） =====
+   这一段的样式只有文章页用得上，主页面不会匹配到任何元素 ——
+   但样式表是共用的，所以它会跟着主页面一起下发。几十行 CSS
+   换「文章页和主站是同一套皮、不会各改各的」，这个交换划算。
+
+   标题与控件保留像素字体，长文使用系统字体和独立阅读行宽。
+   子页共用：页头 .sitebar（第 6.1 节，样式在 skins.js 的 controlsCss）→ 面板（标题 .pt 是站牌，下面像素 36 的 h1）→ 页脚站台。 */
+/* 搪瓷徽章（V20 第 3.5、6.15 节）：高 40、左右内边距 12。材质只写在这一处：悬停浮起色，按下见 pixel-art.js 合并的 :active。 */
+.abtn{display:flex;align-items:center;gap:8px;min-height:40px;padding:0 12px;font-size:12px;line-height:24px;
+  text-decoration:none;color:var(--ink);background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge)}
+.abtn:hover{background:var(--raised)}
+/* 子页标题是站牌（第 7.2 节）：像素 12、站牌底，前面一枚 12px 图标；它下面才是像素 36 的页面标题。
+   留言板、评论区这类子页里的普通面板仍用 .pt 的面板头（24／32）。 */
+.artpage>.pt,.museum-page>.pt{gap:var(--s2);margin:0 0 var(--s3);padding:0 var(--s2);font-size:12px;line-height:24px;
+  background:var(--plate);color:var(--on-plate)}
+.artpage{margin:0 auto var(--s8)}
+/* 页面主标题像素 36（第 4 节「招牌·大」）；长标题照常折行，text-wrap:balance 让两三行折得均匀。≤760 改 24／36（在 ≤760 块里）。 */
+.arttitle,.gal-title{font-size:36px;line-height:48px;font-weight:normal;margin:var(--s2) 0 var(--s4);word-break:break-word;text-wrap:balance}
+.artmeta{font-size:12px;color:var(--tx-3);margin:0 0 16px;line-height:24px}
+/* 元信息行的每一项（metaLine()，第 4 节）：项内不断行，过长时只截它自己，只在项与项之间换行。
+   不收链接：overflow:hidden 会裁掉链接的焦点框。 */
+.mi{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:top}
+/* 元信息里的标签图标（TAG_ICON）：SVG 默认 display:block，
+   在文本流里会硬换行，必须退回 inline-block 才能贴着字走 */
+.artmeta svg.ic{display:inline-block;vertical-align:-1px;margin-right:2px}
+/* 分享键（全站每页一枚，在页头右侧）：搪瓷徽章，与外观设置同高 40。
+   柯西 2026-09-20「没有分享键」→ 2026-09-21「分享功能没做好」：按钮/脚本共用
+   subpage.js 的 shareBtn/shareScript；点击分支（触屏走原生面板、桌面直接复制链接）
+   和三条复制降级写在那边，这里只管样式。
+   ⚠️ 按钮上别写副标题，一个图标 + 「分享」两个字就够。 */
+.share-btn{display:inline-flex;align-items:center;gap:5px;flex:0 0 auto;min-height:40px;
+  background:var(--surface);border:2px solid var(--edge);padding:0 12px;
+  font:12px var(--pix);line-height:24px;color:var(--ink);
+  box-shadow:0 2px 0 var(--edge)}
+.share-btn:hover{background:var(--raised)}
+.share-btn:active{transform:translateY(2px);box-shadow:none}
+/* 分享结果的小纸条（票据材质，第 6.15 节）：复制成功/失败都要有回执 —— 不然点了没反应，
+   跟「没有分享键」看起来一模一样。整宽定位、按内容收缩、外边距居中：left:50% 时收缩宽度只有半个视口，
+   390 屏放不下兜底提示句。user-select：最后那条降级是把链接显示在纸条上让人家长按选中，
+   iOS 的 webview 里不显式开文本选择，长按是选不中的。兜底网址在单独的 <span> 里，阅读字整行。 */
+.share-toast{position:fixed;left:0;right:0;bottom:var(--s6);margin:0 auto;width:fit-content;max-width:min(calc(100vw - 32px),540px);
+  transform:translateY(8px);z-index:70;padding:var(--s2) var(--s3);font-size:12px;line-height:24px;
+  background:var(--surface);color:var(--ink);border:2px solid var(--edge);box-shadow:var(--lift);
+  opacity:0;visibility:hidden;overflow-wrap:anywhere;-webkit-user-select:text;user-select:text;
+  transition:opacity .16s,transform .16s,visibility .16s}
+.share-toast.on{opacity:1;visibility:visible;transform:none}
+.share-toast span{display:block;font-family:var(--read);font-size:14px;line-height:22px}
+.artcover{margin:0 0 16px;text-align:center}
+.artcover img{max-width:180px;max-height:250px;border:3px solid var(--ink);
+  box-shadow:0 5px 0 rgba(59,36,18,.28);display:inline-block}
+.artbody{font-family:var(--read);
+  font-size:18px;line-height:1.9;max-width:42rem;margin-inline:auto;overflow-wrap:break-word;
+  font-kerning:normal}
+.artbody h2,.artbody h3,.artbody h4{font-family:var(--pix);line-height:1.6}
+.artbody p{margin:0 0 1.25em}
+.artbody h2{font-size:24px;margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--cream-3)}
+.artbody h3{font-size:24px;font-weight:700;margin:20px 0 8px}
+.artbody h4{font-size:24px;margin:16px 0 6px;color:var(--ink-2)}
+/* 文字链（V20 第 6.15 节）：链接色 + 1px 下划线装饰色 */
+.artbody a{color:var(--tx-link);text-decoration:underline;text-decoration-color:var(--link-accent);text-underline-offset:4px}
+.artbody a:hover{background:var(--raised);color:var(--ink)}
+.artbody ul,.artbody ol{margin:0 0 14px;padding-left:22px}
+.artbody li{margin:0 0 6px}
+.artbody .arttable{max-width:100%;overflow-x:auto;margin:0 0 24px}
+.artbody table{width:100%;border-collapse:collapse;font-size:16px;line-height:1.8}
+.artbody th,.artbody td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.artbody th{background:var(--cream-2);font-weight:700}
+.artbody blockquote{margin:0 0 14px;padding:8px 12px;background:var(--cream-2);
+  border-left:5px solid var(--wood-c);color:var(--tx-quote)}
+.artbody blockquote p:last-child{margin:0}
+.artbody code{font-family:ui-monospace,Consolas,"SFMono-Regular",monospace;font-size:15px;background:var(--cream-2);border:1px solid var(--cream-3);padding:0 3px;color:var(--tx-code)}
+/* 正文里的加粗 = 作者想强调的地方，用强调色（四季各不同）*/
+.artbody strong{color:var(--tx-em)}
+.artbody pre{margin:0 0 14px;padding:10px 12px;background:var(--code-bg);color:var(--on-code);
+  border:1px solid var(--line);overflow-x:auto;line-height:1.75}
+.artbody pre code{background:none;border:0;padding:0;color:inherit}
+/* TOC styles adapted from PaperMod post-single.css (MIT; assets/vendor/papermod-LICENSE.txt). */
+details.toc{max-width:42rem;margin:0 auto 24px;background:var(--cream-2);border:1px solid var(--wood-c)}
+details.toc summary{padding:8px 16px;cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='1' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='2' width='1' height='1' fill='%23F5D259'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='3' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='4' width='3' height='1' fill='%23F5D259'/%3E%3Crect x='4' y='4' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='5' width='4' height='1' fill='%23F5D259'/%3E%3Crect x='5' y='5' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='6' width='5' height='1' fill='%23F5D259'/%3E%3Crect x='6' y='6' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='7' width='6' height='1' fill='%23F5D259'/%3E%3Crect x='7' y='7' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='8' width='7' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='8' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='1' y='9' width='8' height='1' fill='%23F5D259'/%3E%3Crect x='9' y='9' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='0' y='10' width='6' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='10' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='10' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='11' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='11' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='12' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='12' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='13' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='13' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='5' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='14' width='2' height='1' fill='%23F5D259'/%3E%3Crect x='8' y='14' width='1' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3Crect x='6' y='15' width='2' height='1' fill='%232B1D0E' stroke='%232B1D0E' stroke-width='.7' stroke-linejoin='miter'/%3E%3C/g%3E%3C/svg%3E") 0 0, pointer;font-size:12px}
+/* 目录条目是会折行的一列标题，用阅读字（V20 第 4 节，v5）；summary「文章目录」仍是像素 12。 */
+.toc .inner{padding:0 16px 12px;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink)}
+.toc ul{list-style:none;margin:0;padding:0}
+.toc a{color:inherit;text-decoration:none}
+.toc a:hover{text-underline-offset:.3rem;text-decoration:underline}
+/* ===== 文章页：目录在左、正文在右（柯西 2026-09-20：「文章内的文章目录能不能放在左边」）=====
+   桌面变成两栏网格：目录栏 200px 固定，正文吃剩下的。目录栏 sticky ——
+   长文章滚到一半，目录还挂在眼前。
+   ⚠️ 别给 .artbody 写死宽度：它在这一栏里由 1fr 决定，写死就跟目录栏打架。
+   ⚠️ 只有真的有目录时 posts.js 才建 .art-cols；没有目录（文章没有小节标题）
+      时正文保持整幅居中，跟改造前一样。 */
+.art-cols{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:start}
+.toc-side{min-width:0;position:sticky;top:20px;max-height:calc(100vh - 40px);overflow:auto}
+.art-cols details.toc{margin:0;max-width:none}
+/* 有目录的文章面板放宽到 1000px —— 这条**必须写在 build/pixel-art.js**（最后一张
+   样式表）：那里有条同特异性的 .is-article .artpage{max-width:860px}，
+   写在本文件会被它覆盖，看着改了其实没生效（2026-09-20 踩过）。 */
+/* 窄屏（≤1080px，V20 由原 900 档并入「两栏变一栏」的 1080 档，第 5.3 节）：目录退回正文上方 —— 就是 2026-09-20 之前的位置。
+   必须显式取消 sticky 和限高，否则目录会变成浮层挡住阅读。 */
+@media (max-width:1080px){
+  .art-cols{grid-template-columns:minmax(0,1fr);gap:0}
+  .toc-side{position:static;max-height:none;overflow:visible}
+  .art-cols details.toc{margin:0 auto 24px;max-width:42rem}
+}
+.artbody h2,.artbody h3,.artbody h4{scroll-margin-top:24px}
+.artbody pre{position:relative;padding-top:44px}
+.copy-code{position:absolute;top:6px;right:8px;padding:4px 8px;background:var(--cream-2);color:var(--ink);border:1px solid var(--wood-c);font:12px var(--pix)}
+.copy-code:hover{background:var(--gold)}
+.artbody img{max-width:100%;height:auto;image-rendering:auto;border:3px solid var(--ink);display:block;margin:0 auto}
+.artbody hr{border:0;height:6px;margin:20px 0;
+  background:repeating-linear-gradient(90deg,var(--wood-c) 0 4px,transparent 4px 8px)}
+.artfoot{margin-top:24px;padding-top:12px;border-top:3px solid var(--cream-3);
+  display:flex;justify-content:flex-end;font-size:12px}
+.artorig{color:inherit;text-decoration:none;border-bottom:2px solid var(--wood-c)}
+.artorig.quiet{color:var(--tx-3)}
+.cmtpanel{max-width:820px;margin:0 auto 26px}
+.cmtbox{min-height:20px;font-size:12px;max-width:760px;margin:0 auto}
+.cmtnote{font-family:var(--read);font-size:14px;line-height:22px;color:var(--tx-3);margin:0 0 8px}
+.cmtnote code{background:var(--cream-2);border:1px solid var(--cream-3);padding:0 3px}
+
+/* ===== 网站底部：评论区 =====
+   评论区在页脚站台（.platform）上方；访客计数改成站台里的车票（第 6.14 节）。 */
+.sitebottom{max-width:none;margin:var(--s8) auto 0}
+/* V21：留言板跟着 12 栏走满宽，评论区内容再收窄到 760（.cmtbox）—— 以前整块 820 居中，
+   跟上面的仪表盘不是一套网格，底部右边会空出一大块。 */
+.sitebottom .cmtpanel{max-width:none;margin-bottom:0}
+/* 上下篇（第 6.15 节）：可点的纸卡，装的是整篇文章标题，所以不做成徽章；标题阅读 14 最多两行，
+   截断裁的是 b 自己，不碰 <a> 的焦点框。与文章面板同宽 860。 */
+.apager{display:flex;gap:var(--s4);max-width:860px;margin:0 auto var(--s8)}
+.apg{flex:1;display:flex;flex-direction:column;gap:var(--s1);min-height:40px;padding:var(--s2) var(--s3);
+  background:var(--surface);border:2px solid var(--edge);text-decoration:none;color:var(--ink)}
+.apg:hover{background:var(--raised)}
+.apg.empty{visibility:hidden}
+.apg i{font-style:normal;font-size:12px;line-height:24px;color:var(--ink-2)}
+.apg b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font-family:var(--read);font-size:14px;line-height:22px;font-weight:600;color:var(--ink)}
+.apg.next{text-align:right}
+
+/* ===== 博客列表页（posts/index.html）=====
+   柯西 2026-09-16 要「一个正式博客页」—— 光一列标题不叫博客页。
+   2026-09-20：这一页改成**完整时间线**（柯西：把时间线做一个单独的页面），
+   卡片直接复用上面「时间线」那一套 .tl-* 样式 —— 不在这里重复定义。
+   曾经的「大卡 + 紧凑列表」样式（.blog-lead / .blog-row）随之退役。 */
+.blog-note{font-family:var(--read);font-size:14px;line-height:22px;color:var(--tx-3);margin:var(--s4) 0 0}
+.blog-note a{color:var(--tx-link)}
+
+/* 外观设置（页头右侧）的样式在 skins.js 的 controlsCss（第 6 层），这里不再写。 */
+.toolbar{margin:20px 0 8px;gap:12px}
+.tool{flex-direction:row;min-height:44px;padding:8px 12px;gap:8px;border:2px solid var(--frame);box-shadow:0 3px 0 var(--frame)}
+.tool:hover,.tool:focus-visible{box-shadow:0 3px 0 var(--frame);transform:translateY(-1px)}
+.museum-more{margin-top:16px;line-height:24px}
+.artbody{max-width:64ch;margin-inline:auto;line-height:2}
+.artbody h2{font-size:24px;line-height:36px}
+.artbody pre{white-space:pre-wrap;overflow-wrap:anywhere}
+/* ≤760（原 ≤680 档并入 V20 的 760，第 5.3 节）：页面标题 24／36（同特异性，必须排在 .arttitle 基础规则之后）。 */
+@media(max-width:760px){
+  .tool{padding:8px;gap:4px}
+  /* 工坊的「手机只露两张」截断：友情站不参与（:not(.fgrid) 挡开）——
+     友链卡没有「查看全部」子页可去，截了就是真没了。友情站改单列铺开（见下）。 */
+  .rgrid:not(.fgrid) .rcard:nth-child(n+3){display:none}
+  .arttitle{font-size:24px;line-height:36px}
+  /* 正文 H2 保持 24px，避免小标题反而比页面标题大。 */
+  .artbody h2{font-size:24px;line-height:36px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.tl-item:hover .tl-go{transform:none}}
+.douban-mark-link{font-size:12px;font-weight:normal;line-height:24px;margin-left:auto;color:var(--tx-link);text-underline-offset:4px;white-space:nowrap}
+
+/* Farm modules: preserve pixel palette; restrained motion, readable content. */
+#calendar,#ledger,.harvest-page{font-size:12px;line-height:24px}
+/* 日历日期（V20 第 6.9 节末）：规则只留这一处，≤430 降档在后面收获簿列表之后那个块里（同特异性后来者赢）。
+   像素字不加粗；日期与四季按钮之间一道 1px 细线（虚线在 V20 里留给普通站线段、空田和开源贡献框）。 */
+.calendar-date{display:flex;flex-direction:column;gap:8px;margin:4px 0 20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.calendar-date time{font-size:36px;line-height:48px;font-variant-numeric:tabular-nums}
+.calendar-date span,.calendar-mode{font-size:12px;line-height:24px}
+/* 说明句会折行，用阅读字（第 4 节点名表） */
+.harvest-note{font-family:var(--read);font-size:14px;line-height:22px}
+/* .se / .pet button / #music button 都是 <button>，光标由主题主规则
+   统一发「金黄可点态箭头」。⚠️ 这些规则里不要再写 cursor:pointer ——
+   ID/类选择器特异性高于主规则的 (0,0,1)，会把像素光标顶回系统箭头。 */
+/* 四季键是搪瓷徽章（V20 第 3.5 节）：当前季节（aria-pressed）用站牌色，悬停浮起色。 */
+#calendar .se{font:inherit;min-height:60px;display:flex;align-items:center;justify-content:center;gap:12px;color:var(--ink);background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:8px}
+#calendar .se b{font-size:12px;line-height:24px;margin:0}
+#calendar .se:hover{background:var(--raised)}
+#calendar .se[aria-pressed="true"]{background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+/* 当季那一格：落影换成 2px 线路色下边（季节按真实时间自动判定，不标出来看不出「现在这一季」）。 */
+#calendar .se.now{box-shadow:0 2px 0 var(--rail)}
+.calendar-mode{margin:16px 0 8px;color:var(--ink-2)}.calendar-auto{min-height:40px;font:inherit}
+.harvest-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+/* 年份下拉是 40px 高的搪瓷徽章 */
+.harvest-heading select,.harvest-filters select{font:inherit;line-height:24px;min-height:40px;color:var(--ink);background:var(--surface);
+  border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:4px 8px;max-width:100%}
+.harvest-counts a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;border-bottom:1px solid var(--wood-c);text-decoration:none;color:var(--ink)}
+.harvest-counts a span{display:flex;align-items:center;gap:10px}.harvest-note{margin:16px 0 0;color:var(--tx-3)}
+.harvest-filters{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}.harvest-filters label{display:flex;align-items:center;gap:8px}
+/* 收获簿记录按时刻表行排（V20 第 7.2 节）：日期像素 12 ｜ 类型图标 + 标题阅读 16 ｜ 类型芯片；行间 1px 细线，悬停整行浮起色。
+   ≤430 日期独占一行（见下方 ≤430 块）。 */
+.harvest-list{list-style:none;padding:0;margin:20px 0}
+.harvest-list li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;align-items:start;gap:12px;padding:12px 8px;border-bottom:1px solid var(--line)}
+.harvest-list li:hover{background:var(--raised)}
+.harvest-list time{color:var(--tx-em);white-space:nowrap;font-variant-numeric:tabular-nums}
+.harvest-list a{display:flex;align-items:flex-start;gap:8px;min-width:0;color:var(--ink);text-decoration:none;font-family:var(--read);font-size:16px;line-height:26px;font-weight:600;overflow-wrap:anywhere}
+.harvest-list a:hover{text-decoration:underline;text-underline-offset:4px}
+.harvest-list a svg.ic{margin-top:5px}
+.harvest-list small{padding:0 6px;font-size:12px;line-height:24px;white-space:nowrap;background:var(--raised);color:var(--tx-tag)}
+.harvest-list li:hover small{background:var(--surface)}
+/* ≤430 降档：日历日期（第 6.9 节末）与收获簿日期独占一行。排在两者的基础规则之后（同特异性后来者赢）。 */
+@media(max-width:430px){.calendar-date time{font-size:24px;line-height:36px}.harvest-list li{grid-template-columns:minmax(0,1fr) auto;row-gap:4px}.harvest-list time{grid-column:1/-1}}
+.harvest-list [hidden],.harvest-empty[hidden]{display:none!important}
+.farm-harvest-intro{margin:0 0 24px;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2);max-width:52em}
+.farm-harvest .harvest-heading{padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.farm-harvest .harvest-heading label{font-size:24px;line-height:32px}
+/* 四块收获田是纸卡（V20 第 6.11 节）；空田用浮起色底 + 1px 虚线控件边。数字像素 24、名称像素 12。 */
+.farm-harvest .harvest-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.farm-harvest .farm-plot{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:16px 12px 12px;min-width:0;
+  border:1px solid var(--line);background:var(--surface);box-shadow:var(--lift);text-decoration:none;color:var(--ink);transition:background .2s ease}
+.farm-harvest .farm-plot[data-empty="true"]{background:var(--raised);border:1px dashed var(--edge);box-shadow:none}
+.farm-harvest .farm-plot:hover{background:var(--raised)}.farm-harvest .farm-plot:focus-visible{outline:2px solid var(--rail);outline-offset:4px}
+.farm-harvest .farm-plot-label{display:block;font-size:12px;line-height:24px}
+.farm-harvest .farm-plot-crop{position:relative;display:flex;align-items:flex-end;justify-content:center;height:64px;padding-bottom:12px}
+.farm-harvest .farm-plot-crop::after{content:'';position:absolute;bottom:0;left:0;right:0;height:8px;background:var(--wood)}
+.farm-harvest .farm-plot-crop .ic{width:36px;height:36px;z-index:1}.farm-harvest .farm-plot[data-empty="true"] .farm-plot-crop .ic{visibility:hidden}
+.farm-harvest .farm-plot-total{display:flex;align-items:baseline;gap:8px}.farm-harvest .farm-plot-total b{font-size:24px;line-height:32px;color:var(--tx-num);font-variant-numeric:tabular-nums}
+.farm-harvest .farm-plot-total span,.farm-harvest .farm-plot-note{font-size:12px;line-height:24px;color:var(--ink-2)}
+.farm-recent{margin-top:28px}.farm-recent-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}.farm-recent-heading h3{margin:0;font-size:12px;line-height:24px;font-weight:normal}.farm-recent-heading a{color:var(--ink-2);text-underline-offset:4px;white-space:nowrap}
+/* 最近三条按时刻表行排：类型与日期像素 12，标题阅读 14 */
+.farm-recent-list{list-style:none;padding:0;margin:0}.farm-recent-list li{display:grid;grid-template-columns:76px minmax(0,1fr) auto;align-items:start;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.farm-recent-list a{color:var(--ink);text-decoration:none;font-family:var(--read);font-size:14px;line-height:22px;overflow-wrap:anywhere}.farm-recent-list a:hover{text-decoration:underline;text-underline-offset:4px}
+.farm-recent-kind{display:flex;align-items:center;gap:8px;color:var(--ink-2)}.farm-recent-kind .ic{width:24px;height:24px;flex:none}.farm-recent-list time{color:var(--ink-2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.farm-recent-empty{margin:0;padding:16px 0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}.farm-harvest [hidden]{display:none!important}
+.farm-option{display:flex;align-items:center;gap:8px;font-size:12px;line-height:24px;min-height:36px}.farm-option input{width:16px;height:16px;accent-color:var(--wood-c)}
+/* 页脚站台两侧（V20 第 6.13 节）：花箱 = 灯笼 + 当季两株作物，夜里灯笼发光；小鸡的回应在它头顶，空着时占位不显示（不让站台跳动）。 */
+.planter{display:flex;align-items:flex-end;gap:8px;pointer-events:none}.planter .ic{width:32px;height:32px}
+html[data-time="night"] .planter-lantern{filter:drop-shadow(0 0 8px var(--lamp))}
+.season-plants{display:none;position:relative;align-items:flex-end;gap:4px}
+html[data-season="spring"] .season-plants.spring,html[data-season="summer"] .season-plants.summer,html[data-season="autumn"] .season-plants.autumn,html[data-season="winter"] .season-plants.winter{display:flex}
+.season-plants.winter{min-width:74px}
+.snow-cap{display:block;position:absolute;bottom:-5px;left:-4px;width:74px;height:10px;background:#eefaff;box-shadow:4px -4px 0 #eefaff,-4px 2px 0 #bad7e4}
+.pet{display:flex;flex-direction:column;align-items:center;width:60px}.pet button{width:60px;height:60px;padding:8px;border:0;background:transparent}.pet .ic{width:44px;height:44px;filter:drop-shadow(1px 0 0 var(--edge)) drop-shadow(-1px 0 0 var(--edge)) drop-shadow(0 1px 0 var(--edge)) drop-shadow(0 -1px 0 var(--edge))}
+.pet-reply{min-height:24px;font-size:12px;line-height:24px;color:var(--ink);white-space:nowrap}.pet-reply:empty{visibility:hidden}
+.pet button:active{transform:translateY(2px)}.pet button:focus-visible{outline:2px solid var(--edge);outline-offset:2px}
+html[data-farm-pet="off"] .farm-pet,html[data-farm-scenery="off"] .season-scenery{display:none}
+@media(max-width:760px){.harvest-heading{flex-wrap:wrap}.farm-harvest .harvest-counts{grid-template-columns:repeat(2,minmax(0,1fr))}.farm-recent-list li{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}.farm-recent-kind{grid-column:1}.farm-recent-list a{grid-column:1;grid-row:2}.farm-recent-list time{grid-column:2;grid-row:2}}
+@media(prefers-reduced-motion:reduce){.pet button,.farm-harvest .farm-plot{transition:none;animation:none}}
+
+
+/* Pixel art system: square steps and solid materials, no smooth bevels.
+   ⚠️ 颜色只在 build/palette.js 定义（V20）：这里不再写 :root／夜间色板，组件只引用角色变量。 */
+/* 容器（V20 第 5.2 节）：1440 屏内容宽 1272，1920 屏封顶 1560 —— 舞台要放大，9／3 分栏也要约 1232 的内容宽。
+   ⚠️ 写成 min/max 表达式而不是加 @media —— 断点档位有棘轮预算，能不新增就不新增。 */
+.wrap{max-width:min(1560px,max(1200px,100% - 120px));padding:0 24px 40px}
+/* ===== 舞台与招牌（V20 第 6.2、6.3 节；V21 改海报排法）=====
+   .hero 网格里同一格叠两层：舞台在下、招牌在上。用网格叠层而不用绝对定位，
+   舞台变矮（WebGL 出错、矮视口）时容器按招牌撑高，招牌不会探出舞台顶部。
+   V21：招牌不再是一张白纸卡 —— 白卡压在三维画面上像贴上去的 UI。
+   名字与简介直接落在画面左下，底部一层深色渐变（--code-bg 是本站唯一稳定的深底角色，
+   --on-code 是它上面稳定的浅字）保证 11 套色板、昼夜两态都读得清；
+   ≤1080 退回「场景 + 说明条」上下排列，说明条用一条墨线起头，不再套卡。 */
+.hero{position:relative;display:block}
+.stage{position:relative;width:100%;aspect-ratio:21/9;max-height:max(300px,calc(100vh - 220px));overflow:hidden;
+  background:var(--raised);border:1px solid var(--line);box-shadow:var(--lift)}
+/* 地名牌与控件组：半透明深底 + 细亮边，压在画面上不抢主体（旧版是实心纸卡，像两块贴纸）。 */
+.stage-plate{position:absolute;top:var(--s4);left:var(--s4);z-index:2;margin:0;padding:0 8px;letter-spacing:1px;
+  background:color-mix(in srgb,var(--code-bg) 55%,transparent);color:var(--on-code);
+  border:1px solid color-mix(in srgb,var(--on-code) 30%,transparent);font-size:12px;line-height:24px}
+.stage-plate span{display:none}
+html[data-skin="sakura"] .plate-sakura,html[data-skin="coast"] .plate-coast,
+html[data-skin="observatory"] .plate-observatory,html[data-skin="farm"] .plate-farm{display:inline}
+.stage-ctrl{position:absolute;top:var(--s4);right:var(--s4);z-index:2;display:flex;gap:var(--s1);padding:var(--s1);
+  background:color-mix(in srgb,var(--code-bg) 38%,transparent);
+  border:1px solid color-mix(in srgb,var(--on-code) 26%,transparent);backdrop-filter:blur(6px)}
+.stage-btn{min-height:32px;padding:0 8px;border:1px solid color-mix(in srgb,var(--on-code) 42%,transparent);
+  background:transparent;color:var(--on-code);box-shadow:none;font:inherit;font-size:12px;line-height:24px}
+.stage-btn:hover{background:color-mix(in srgb,var(--on-code) 16%,transparent)}
+.stage-btn[aria-pressed="true"]{background:var(--on-code);color:var(--code-bg);border-color:var(--on-code)}
+/* 招牌：像美术馆墙签一样接在画面下方，一条墨线起头。
+   左栏姓名与签名，右栏一句说明与四枚联系徽章；不叠在画面上，就没有对比度和遮挡问题。 */
+.sign{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--s6);align-items:start;
+  margin:var(--s6) 0 0;padding:var(--s6) 0 0;border-top:2px solid var(--ink);
+  background:none;box-shadow:none;color:var(--ink)}
+.sign h1{grid-column:1/span 6;grid-row:1;margin:0;font:normal 48px/60px var(--pix);color:var(--ink)}
+.sign .motto{grid-column:1/span 6;grid-row:2;margin:var(--s1) 0 0;font-size:12px;line-height:24px;color:var(--ink-2)}
+.sign .intro{grid-column:8/span 5;grid-row:1;max-width:44ch;margin:0 0 var(--s3);font-family:var(--read);font-size:16px;line-height:26px;color:var(--ink);text-wrap:balance}
+.sign .social{grid-column:8/span 5;grid-row:2;justify-content:flex-start;margin:0}
+.sign .soc:hover{background:var(--raised)}
+/* ===== 12 栏网格（V20 第 5.2 节）=====
+   线路图跨满 12 栏；主栏 8／站台 4（≥1400 为 9／3）。主栏 .dash-body 是首页唯一一层卡，拉满这一行；
+   站台 sticky，比视口高时 dash.js 写负的 --side-top，侧栏任何部分都滚得到（第 6.6 节）。 */
+.dash{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--s6);margin-top:var(--s8)}
+.dash-head{grid-column:1/-1;position:relative;min-width:0;margin-bottom:var(--s6);scroll-margin-top:var(--s4)}
+.dash-body{grid-column:span 8;align-self:stretch;min-width:0;padding:var(--s6);border:1px solid var(--line);background:var(--surface);box-shadow:var(--lift)}
+.dash-side{grid-column:span 4;min-width:0;position:sticky;top:var(--side-top,16px);align-self:start}
+/* ===== 线路图（V20 第 6.4 节）=====
+   每个标签是一个车站：线段 ::before、站点 ::after 都是伪元素，不加标记。快车站大方块 + 实线，普通站小方块 + 虚线。
+   每格高 92：0–40 女孩行走带，线段中心 52，快车站点 42–62、普通站点 46–58，站名 68–92。
+   当前站同时靠「站点填满 + 站名变站牌」两种形状变化区分，不只靠颜色。 */
+.dash-tabs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+.dash-tab{position:relative;display:block;height:92px;color:var(--ink);font-size:12px;line-height:24px;text-decoration:none}
+.dash-tab::before{content:'';position:absolute;left:0;right:0;top:51px;height:2px;background:var(--rail)}
+.dash-tab.is-local::before{background:repeating-linear-gradient(90deg,var(--rail) 0 6px,transparent 6px 12px)}
+.dash-tab:first-child::before{left:50%}.dash-tab:last-child::before{right:50%}
+.dash-tab::after{content:'';position:absolute;z-index:1;left:calc(50% - 9px);top:43px;width:18px;height:18px;background:var(--surface);border:3px solid var(--rail)}
+.dash-tab.is-local::after{left:calc(50% - 5px);top:47px;width:10px;height:10px;border-width:2px}
+.dash-tab .stn{position:absolute;left:50%;top:68px;transform:translateX(-50%);padding:0 8px;white-space:nowrap;letter-spacing:.5px}
+.dash-tab.is-local .stn{color:var(--ink-2)}
+.dash-tab[aria-selected="true"]::after{background:var(--plate);border-color:var(--plate)}
+.dash-tab[aria-selected="true"] .stn{background:var(--plate);color:var(--on-plate)}
+.dash-tab:not([aria-selected="true"]):hover::after{background:var(--raised)}
+.dash-tab:hover .stn{text-decoration:underline 2px;text-underline-offset:4px}
+/* 女孩画在整条线路图上的叠层里（不再另占一条 48px 的带），点击穿透到站格。 */
+.dash-track{position:absolute;inset:0;pointer-events:none}
+.dash-walk{position:absolute;left:0;top:0;width:40px;height:40px;pointer-events:none;transform:translate(var(--x,0),var(--y,0));image-rendering:pixelated}
+.dash-walk .art{display:block;width:40px;height:40px;transform-origin:center bottom;animation:hop 280ms steps(2) infinite;animation-play-state:paused}
+.dash-walk.walking .art{animation-play-state:running}
+.tabpane:not(.on){display:none}
+.tabpane.on{animation:px-pane-in .22s cubic-bezier(.22,1,.36,1) backwards}
+.tabpane>.panel{border:0;box-shadow:none;margin-bottom:0;padding:0;background:none}
+/* ===== 站台侧栏（V20 第 6.6 节）=====
+   状态与唱片机各是一张纸卡（内边距 24，≤760 为 16）。时钟像素 36、问候阅读 14、日期·季节·昼夜像素 12；
+   写作台是整宽 40px 的站牌主按钮（check-dashboard.js 认 .side-acts a[href="write/index.html"]）。 */
+.clock{font-size:36px;line-height:48px;color:var(--ink);font-variant-numeric:tabular-nums}
+.clock b{font-weight:normal;color:var(--ink-2)}
+.greet{min-height:22px;margin:var(--s1) 0 0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink)}
+#dash-meta{min-height:24px;margin:0;font-family:var(--pix);font-size:12px;line-height:24px;color:var(--ink-2)}
+.side-acts{display:flex;margin-top:var(--s4)}
+.side-acts .abtn{flex:1;justify-content:center;gap:8px;min-height:40px;margin:0;padding:0 12px;
+  background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+.side-acts .abtn:hover span{text-decoration:underline;text-underline-offset:4px}
+.dash-side .panel{margin-bottom:var(--s6)}.dash-side .panel:last-child{margin-bottom:0}
+@keyframes hop{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes px-pane-in{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(min-width:1400px){.dash-body{grid-column:span 9}.dash-side{grid-column:span 3}}
+/* ≤1080：招牌接在舞台下沿、宽度跟舞台一致；舞台 2:1；站台落到主栏下方、两块面板并排，不再 sticky。
+   V21：这一段没有画面可以压字，招牌改回「说明条」——纸墨色、两像素墨线起头、不加卡边。 */
+@media(max-width:1080px){
+  .sign{display:block;margin:0;padding:var(--s6) 0 0;border-top:2px solid var(--ink)}
+  .sign h1{font-size:36px;line-height:48px}
+  .sign .motto{margin:var(--s1) 0 var(--s3)}
+  .sign .intro{max-width:none;margin:0 0 var(--s4)}
+  .sign .social{margin:0}
+  .stage{aspect-ratio:2/1}
+  .dash-body,.dash-side{grid-column:1/-1}  .dash-side{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s6);margin-top:var(--s6)}
+  .dash-side .panel{margin-bottom:0}
+  .wgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* 首屏的双栏容器（.layout）已换成仪表盘 **.dash**（规则见上方 "首屏仪表盘" 一节）：
+   主栏 1fr + 状态栏 288px。下滑区（留言板、页脚站台）仍是整行，不走两栏。 */
+/* 面板材质（纸卡）与面板头只写在 gen.js 的 .panel、.pt 一处（V20 第 3.5、6.11 节）；四角饰件与作物架随 V20 删了。 */
+.museum-more{line-height:24px}.museum-more a,.more a{color:var(--ink);text-underline-offset:5px}
+/* 「查看全部仓库」与仓库汇总行同一行、靠右 */
+#projects .museum-more{justify-content:flex-end;margin-top:-24px}
+/* ---------- 精选项目与开源贡献（工坊顶部，柯西 2026-10-03；V20 第 6.9 节）----------
+   精选是**显式两列**、第三张跨满两列左图右文（auto-fit 在宽主栏会变 3 列，第三张的跨列放不进第一行剩下的 1 列）；
+   ≤760 回到单列上图下文。不给卡片加类名：check-workshop.js 按 class="pjcard" 精确计数。
+   封面统一 16:10（assets/projects/*.jpg，由 build/_make-covers.py 生成），object-fit:cover 只是兜底。
+   卡片是海报材质（纸卡）；文字只用 projects.js 里 10-03 确认过的内容（B03）。 */
+.pjblock{margin:0 0 var(--s6)}
+.pjhead{display:flex;align-items:center;gap:8px;margin:0 0 var(--s3);color:var(--rail);font-size:12px;line-height:24px}
+.pjgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4)}
+.pjgrid>.pjcard:nth-child(3){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+.pjgrid>.pjcard:nth-child(3) .pjshot{align-self:start;border-bottom:0;border-right:1px solid var(--line)}
+.pjcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift);
+  color:var(--ink);text-decoration:none;transition:background .12s}
+.pjcard:hover{background:var(--raised)}
+.pjshot{display:block;aspect-ratio:16/10;overflow:hidden;background:var(--raised);border-bottom:1px solid var(--line)}
+.pjshot img{display:block;width:100%;height:100%;object-fit:cover}
+.pjbody{display:flex;flex:1;flex-direction:column;gap:var(--s2);padding:var(--s4)}
+.pjh{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s2);flex-wrap:wrap}
+.pjname{font-size:24px;line-height:32px;font-weight:normal;overflow-wrap:anywhere}
+.pjrole{font-size:12px;line-height:24px;font-style:normal;padding:0 8px;background:var(--plate);color:var(--on-plate);white-space:nowrap}
+.pjevent{margin:0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+.pjtag{margin:0;font-family:var(--read);font-size:16px;line-height:26px;color:var(--ink)}
+.pjstack{display:flex;flex-wrap:wrap;gap:4px}
+.pjstack i{font-size:12px;line-height:24px;font-style:normal;padding:0 8px;background:var(--raised);color:var(--tx-tag)}
+/* 事实列表：每条一行、条间 1px 细线，不加项目符号 */
+.pjfacts{display:flex;flex-direction:column;margin:0}
+.pjfacts i{display:block;padding:var(--s2) 0;font-family:var(--read);font-style:normal;font-size:14px;line-height:22px;color:var(--ink-2)}
+.pjfacts i+i{border-top:1px solid var(--line)}
+.pjgo{display:flex;align-items:center;gap:var(--s2);width:fit-content;margin-top:auto;padding-top:var(--s3);font-size:12px;line-height:24px;
+  color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+/* 开源贡献：无封面、1px 虚线控件边（虚线表示「参与别人的项目」），视觉上比精选弱一档 —— 作者和贡献者不能长得一样 */
+.pjcontrib{margin-top:var(--s6)}
+.pjcbox{padding:var(--s4);border:1px dashed var(--edge);background:var(--surface)}
+.pjcname{display:flex;align-items:baseline;gap:var(--s2);flex-wrap:wrap;margin:0 0 var(--s2)}
+.pjcname b{font-size:24px;line-height:32px;font-weight:normal;color:var(--ink)}
+.pjcname i{font-style:normal;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+.pjcbox .pjgo{padding-top:var(--s2)}
+#calendar .se{min-height:58px;gap:8px}
+#calendar .se .ic{width:24px;height:24px}
+.museum-zone-title{margin:8px 0 16px;gap:12px;line-height:24px}
+.shelf-tab,.museum-filter{padding:8px 12px}
+.shelf-status,.gfoot{line-height:24px}
+.is-article .artpage,.is-article .cmtpanel{max-width:860px}.is-article .artbody{max-width:42rem;line-height:1.9}
+/* 有目录的文章（柯西 2026-09-20：目录放左边）面板放宽到 1000px：
+   860 - 48(面板内边距) - 200(目录栏) - 28(栏间距) = 584px，比从前的阅读宽度
+   42rem(672px) 还窄；放宽后正文正好拿回 672px。 specificity 必须比上面那条
+   .is-article .artpage 高一级（多个 .has-toc），否则同特异性下还是 860 赢。 */
+.is-article .artpage.has-toc{max-width:1000px}
+.is-article .artcover img{border:0;box-shadow:none}
+@media(max-width:760px){.wrap{padding:0 16px 32px}.stage{aspect-ratio:4/3}
+/* 线路图两行、不滚动：60 列网格，快车站 5 × 12 排满第一行，普通站 4 × 15 排满第二行；相馆或友链缺席时按 data-* 改跨度。
+   每格 84：0–32 女孩带，站点 34–54，站名 60–84 —— 与桌面同一套留白（女孩脚下 2px、站点到站名 6px），第一行站名不贴站点。 */
+.dash-tabs{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(60,minmax(0,1fr))}
+.dash-tab{height:84px;grid-column:span 12}.dash-tab.is-local{grid-column:span 15}
+.dash-tabs[data-express="4"] .is-express{grid-column:span 15}.dash-tabs[data-local="3"] .is-local{grid-column:span 20}
+.dash-tab::before{top:42px}.dash-tab::after{top:34px}.dash-tab.is-local::after{top:38px}.dash-tab .stn{top:60px}
+.dash-tab.is-turn-end::before{right:50%}.dash-tab.is-turn-start::before{left:50%}
+.dash-walk,.dash-walk .art{width:32px;height:32px}
+.dash-side{grid-template-columns:minmax(0,1fr)}
+/* 窄屏联系徽章排成 2×2：自然宽度会在 390 屏上留下「微信」单独一行。 */
+.sign .social{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s2)}
+/* 面板内边距 16（站台纸卡、子页面板）；主栏工坊仓库与精选海报单列，第三张海报回到上图下文。
+   时刻表的窄屏规则与基础规则同在 gen.js（第 1 层），不在这里写。 */
+.dash-body{padding:var(--s4)}.panel{padding:var(--s4);margin-bottom:var(--s7)}
+.rgrid,.wgrid{grid-template-columns:minmax(0,1fr)}.rfoot{display:none}#projects .museum-more{margin-top:20px;justify-content:center}
+.pjgrid{grid-template-columns:minmax(0,1fr)}.pjgrid>.pjcard:nth-child(3){display:flex;flex-direction:column}
+.pjgrid>.pjcard:nth-child(3) .pjshot{border-right:0;border-bottom:1px solid var(--line)}
+.gstrip img{height:96px}.museum-zone-title{flex-wrap:wrap}.douban-mark-link{margin-left:0}}
+/* ===== 窄屏横向溢出的源头（2026-09-20 量出来的，别再当"环境问题"） =====
+   ⚠️ 这条**必须留在本文件**：本文件是样式表里最后一份，写进 gen.js 会被上面的
+   .shelf-tab 覆盖（同特异性、后来者胜），看着改了其实没生效。
+   （另一个源头「面板底部作物架」.dc-shelf 随 V20 删了。）
+
+   博物馆的 5 个分类按钮（全部1198 / 影287 / 书44 / 音乐571 / 游戏296）
+      一行天然要 354px，而它所在面板的内容宽只有 320px→242 / 360px→282 /
+      375px→297 / 390px→312。实测 360px 就已经顶出面板外（页面横向溢出 9px）。
+      先收紧内边距（375px 以上这样就是一行了），再允许折行兜底 ——
+      折行只在真的放不下时发生，不是把窄屏都变成两行。
+      ⚠️ 不能用 overflow-x:auto：内容会藏进滚动条后面，DOM 里查得到、屏幕上看不见。 */
+@media(max-width:430px){
+  .shelf-bar{flex-wrap:wrap;gap:4px}
+  .shelf-tab{padding:8px 4px}
+  .shelf-tab i{padding:0 2px}
+  /* 书架固定 3 列（第 6.8 节）；海报名「szuDesktop · 荔枝庭院」像素 24 要 264px，320 屏卡内只有约 220（第 6.9 节） */
+  .shelf{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pjname{font-size:12px;line-height:24px}
+  /* 概览的精选取自长项目名（szuDesktop · 荔枝庭院）在 320 屏占掉一半，说明列收窄。 */
+  .ovpj b{width:120px}
+}
+@media(max-width:360px){
+  /* 320 屏地名牌与右上控件组放不进同一行；≤1080 招牌已接在舞台下沿，舞台左下是空的（第 6.2 节，v5） */
+  .stage-plate{top:auto;bottom:var(--s4)}
+  .sign .soc{flex:1 1 calc(50% - 4px)}
+}
+/* ===== 按压反馈（2026-09-22，对标 jonbrown66/pixel-portfolio 的 .pixel-button）=====
+   像素按钮的三态手感：hover 上浮 ▸ active 下沉 + 落影收缩，"按得下去"。
+   gen.js 里 .tool/.soc/.share-btn 各写过 :active，但全部被本文件同特异性、
+   后加载的 hover 规则压住（.toolbar .tool:hover 是 0,3,0，.tool:active 只有
+   0,2,0）—— 首页工具栏和社交牌其实一直按不下去；项目卡、相馆图、侧栏果实、
+   翻页按钮等其余可点元素则一个 :active 都没有，点下去毫无回馈。
+   ⚠️ :active 必须写在本文件：这里是样式表最后一份，写 gen.js 会被上面的
+      hover 压掉，看着改了其实不生效（同特异性、后来者胜）。
+   ⚠️ .tool 的生效层在 .toolbar .tool:hover（0,3,0），active 也要带上前缀；
+      文字链（.more a / .museum-more a）是 inline，transform 不生效，
+      用 position:relative + top 偏移。
+   ⚠️ 同位移值的合并成一条选择器列表：规则总数有 1900 的棘轮预算
+      （check-css-budget），一个控件一条 :active 放不下。 */
+/* V20 第 6.15 节：所有按下态统一成「下沉 2px + 收起落影」，一条规则管完（含页脚快捷栏 .hb）。 */
+.dash-tab:active,.sign .soc:active,.stage-btn:active,.cbtn:active,.gal-item:active,
+.museum-item a:active,.gstrip .gp:active,.exc > a:active,.apg:active,.museum-page-btn:active:not(:disabled),
+.shelf-tab:active,.museum-filter:active,.copy-code:active,
+.rcard:active,.wcard-link:active,.pjcard:active,.abtn:active,.hb:active{transform:translateY(2px);box-shadow:none}
+.more a:active,.museum-more a:active{position:relative;top:1px}
+/* 触屏没有"悬停"：tap 之后 :hover 会粘在元素上（卡片一直浮着、一直黄底），
+   桌面看不出、手机必现。参照项目用 @media (hover:hover) 正向包 hover；
+   本站 hover 横跨 gen.js 与本文件两份样式表，改用中和法：一个块把位移类
+   hover 在触屏上一律摁平（背景色粘滞比位移轻，留着不动）。
+   ⚠️ 同样必须写在本文件：.toolbar .tool:hover / .rcard:hover 的生效层在这里。 */
+@media (hover:none){
+  .dash-tab:hover,.sign .soc:hover,.cbtn:hover,.rcard:hover,.pjcard:hover,
+  .wcard-link:hover,.gal-item:hover,.gstrip .gp:hover,.exc > a:hover,
+  .abtn:hover,.apg:hover,.tool:hover,.tool:focus-visible,.soc:hover,.soc:focus-visible,
+  .share-btn:hover,.hb:hover,.tl-item:hover{transform:none}
+}
+/* 卡片轻微上移并渐显：280ms，35ms 交错且最多等待 175ms。
+   backwards 只管理入场，不占住 hover/active；减少动效时内容保持可见。 */
+@keyframes px-card-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.rcard,.pjcard,.tl-card,.gstrip .gp,.exc,.gal-item,.museum-item,.wcard{animation:px-card-in .28s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*35ms),175ms)}
+
+
+#music{scroll-margin-top:24px;font-size:12px;line-height:20px}
+.music-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(64px,1fr));gap:8px;margin:8px 0}
+/* V20 第 6.6 节：功能与标记不变，只换材质。按钮是搪瓷徽章（选中站牌色，悬停浮起色只给未选中的那枚，
+   免得选中键悬停时站牌色字压在浮起色上）；唱片盘、唱臂、指示灯仍是像素画。 */
+#music button:not([data-music-play]){font:inherit;line-height:20px;color:var(--ink);background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge);padding:4px 8px}
+#music button:not([data-music-play]):not([aria-pressed="true"]):hover:not(:disabled){background:var(--raised)}
+#music button[aria-pressed="true"]{background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+#music button:disabled{opacity:.4;cursor:default}#music button:active:not(:disabled){transform:translateY(2px);box-shadow:none}
+#music a:focus-visible,#music button:focus-visible{outline:2px solid var(--rail);outline-offset:3px}
+.record-player{padding:4px;background:var(--raised);border:2px solid var(--edge);box-shadow:var(--lift)}
+.record-deck{height:104px;position:relative;background:var(--surface);border:2px solid var(--edge)}
+.record-disc{position:absolute;left:calc(50% - 54px);top:2px;width:96px;height:96px;background:#252d2b;clip-path:polygon(25% 0,75% 0,75% 6%,87% 6%,87% 13%,94% 13%,94% 25%,100% 25%,100% 75%,94% 75%,94% 87%,87% 87%,87% 94%,75% 94%,75% 100%,25% 100%,25% 94%,13% 94%,13% 87%,6% 87%,6% 75%,0 75%,0 25%,6% 25%,6% 13%,13% 13%,13% 6%,25% 6%)}
+.record-disc::before{content:'';position:absolute;inset:10px;border:3px solid #46504a;box-shadow:inset 0 0 0 4px #252d2b,inset 0 0 0 6px #46504a;clip-path:polygon(20% 0,80% 0,80% 8%,92% 8%,92% 20%,100% 20%,100% 80%,92% 80%,92% 92%,80% 92%,80% 100%,20% 100%,20% 92%,8% 92%,8% 80%,0 80%,0 20%,8% 20%,8% 8%,20% 8%)}
+.record-label{position:absolute;left:30px;top:30px;width:36px;height:36px;object-fit:contain;border:3px solid #d8b16c;image-rendering:auto}
+.record-arm{position:absolute;right:16px;top:10px;width:8px;height:56px;background:#ddd3aa;border:2px solid #695d48;transform:rotate(8deg);transform-origin:top center;box-shadow:2px 2px #333c31;transition:transform .6s steps(5,end)}
+.record-arm::after{content:'';position:absolute;bottom:-6px;left:-3px;width:12px;height:14px;background:#9a6344;border:2px solid #45372b}
+.record-light{position:absolute;right:12px;bottom:10px;width:8px;height:8px;background:#64824c;box-shadow:2px 2px #3e5032}
+html[data-time="night"] .record-light{background:#efca6a;box-shadow:0 0 8px #efca6a}
+.record-speaker{height:12px;margin-top:4px;background:repeating-linear-gradient(90deg,var(--edge) 0 3px,transparent 3px 7px);border-top:2px solid var(--edge);border-bottom:2px solid var(--edge)}
+.music-ranking{margin-top:8px;border-top:1px solid var(--line)}
+.music-ranking>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0;list-style:none;color:var(--ink)}
+.music-ranking>summary::-webkit-details-marker{display:none}
+.music-ranking>summary span{font-size:12px;line-height:12px;transition:transform .18s ease}
+/* ⚠️ 这里曾是 16px —— 违反像素字号硬规矩（12/24/36）。旧布局里它躺在右栏深处、
+   恰好在 check-layout 的取样视口外逃了检；搬进仪表盘侧栏后被量到（2026-09-26）。
+   不是新引入的字号，是旧违规的合规化。 */
+.music-ranking[open]>summary span{transform:rotate(45deg)}
+.music-ranking>summary:hover{color:var(--rail)}.music-ranking>summary:active{transform:translateY(1px)}
+.music-ranking>summary:focus-visible{outline:2px solid var(--rail);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.music-ranking>summary span{transition:none}}
+.music-selection{margin:8px 0 4px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 8px}.music-listen{color:var(--ink);font-size:12px;text-underline-offset:3px}
+.music-list{list-style:none;padding:0;margin:0}.music-row{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:center;border-bottom:1px dashed var(--line)}
+.music-row:hover{background:var(--raised)}
+.music-row a{display:block;min-width:0;padding:8px 0;text-decoration:none;color:var(--ink)}
+/* 名次像素 12；曲名与歌手会被截断，用阅读字 14 */
+.music-rank{color:var(--rail)}.music-track{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.65fr);gap:8px;min-width:0}
+.music-track b,.music-track small{display:block;font-family:var(--read);font-size:14px;line-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.music-track b{font-weight:normal}.music-track small{color:var(--ink-2);text-align:right}
+/* ---- 序号格 = 试听键 ----
+   ⚠️⚠️ 上面那条木牌按钮用 :not([data-music-play]) 排除了它 —— 但排除之后
+   **浏览器默认的按钮样式**（灰底、2px outset 黑边、13.33px 字号）会顶上来，
+   实测量出来的（第一版只排不管，柯西：「放歌 UI 不好看」的元凶之一）。
+   所以这里 reset 必须自己写全，一个都不能省。 */
+#music button[data-music-play]{position:relative;width:24px;height:24px;display:grid;place-items:center;padding:0;border:0;background:none;font:inherit;line-height:12px;color:var(--rail)}
+/* 两个手绘像素图标（icons.js 的 play/pause），默认藏着，按状态亮。
+   行里那枚 16px（跟序号一格），播控条上那枚 24px —— 主控制要够大才点得爽。 */
+#music .music-ic{display:none}
+#music .music-play .music-ic{width:16px;height:16px}
+#music .music-transport .music-ic{width:24px;height:24px}
+/* 播控条：大按钮 + 进度条 + 时间。⚠️ 唱片机那层是 aria-hidden 的装饰，
+   这行必须放在它**外面**，否则键盘和无障碍用户摸不到播放键。 */
+.music-bar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;margin-top:8px}
+#music .music-transport{display:grid;place-items:center;padding:4px}
+#music .music-transport .music-ic-play{display:inline-block}
+#music[data-playing="1"] .music-transport .music-ic-play{display:none}
+#music[data-playing="1"] .music-transport .music-ic-pause{display:inline-block}
+/* 进度条：8px 高的木框槽 + 实心填充，点/拖都能跳（cursor 见 gen.js 的可点光标名单） */
+.music-seek{display:block;height:8px;background:var(--raised);border:2px solid var(--edge)}
+.music-seek-fill{display:block;height:100%;width:0;background:var(--rail)}
+.music-time{font-size:12px;line-height:24px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+#music .music-row:not([data-state="playing"]):not([data-state="paused"]) .music-play:hover .music-ic-play{display:inline-block}
+#music .music-row[data-state="paused"] .music-ic-play{display:inline-block}
+#music .music-row[data-state="playing"] .music-ic-pause{display:inline-block}
+#music .music-row[data-state="playing"] .music-rank,#music .music-row[data-state="paused"] .music-rank,#music .music-play:hover .music-rank{visibility:hidden}
+.music-row[data-state="failed"] .music-play{opacity:.5}
+/* 播放反馈：唱臂从右边摆到唱片上 + 指示灯闪。
+   ⚠️ 别让唱片本体转 —— 它是 clip-path 的八角形，一转就成了斜着的方块
+   （第一版实测截图很难看）。摆臂 + 闪灯才是唱片机的母语。
+   ⚠️ 角度方向：正角把臂尖往**左**推（CSS 屏幕坐标），唱臂在唱片右侧，
+   所以「停=8°（收在右边）→ 播=25°（摆上唱片）」。第一版写成 4° 是反的，
+   臂立到唱片外面去了 —— 截图量出来的。 */
+.record-deck.playing .record-arm{transform:rotate(25deg)}
+@keyframes mu-blink{50%{opacity:.15}}
+.record-deck.playing .record-light{animation:mu-blink 1s steps(2,end) infinite}
+.music-now{margin:8px 0 0;font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2)}
+.music-pager{display:flex;align-items:center;justify-content:space-between;gap:4px;margin:8px 0}.music-pager [data-music-page]{white-space:nowrap;font-variant-numeric:tabular-nums}
+.music-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 8px;margin:8px 0 0;color:var(--ink-2);line-height:18px}.music-source a{color:var(--ink);text-underline-offset:3px}.music-source>span{white-space:nowrap}.music-empty{margin:12px 0;color:var(--ink-2)}
+#music [hidden]{display:none!important}
+
+/* Sakura colours draw on Kenton Wang's Sakura Crossing (MIT; see bundled attribution). */
+/* V20 第 ① 批：四套皮肤的色板、旧名映射与组件覆盖块都已删除 —— 颜色只在 build/palette.js 定义，
+   组件材质只写在各自生效的那一层。整页背景层、院子与子页远景建筑都随 V20 删了；季节花箱在页脚站台，四套皮肤都显示（第 3.7 节）。 */
+
+/* 三维书屋铺满舞台（V20 第 6.2 节）。占位底用 --raised，跟着昼夜走：画布就绪前与出错时露出来的都是它。 */
+.toon-scene{display:none;position:absolute;inset:0;margin:0}
+.toon-stage{position:relative;width:100%;height:100%;overflow:hidden;background:var(--raised);isolation:isolate}
+.toon-stage canvas{display:block;width:100%;height:100%;image-rendering:auto;opacity:0;transition:opacity .5s ease}
+.toon-scene[data-state="ready"] canvas{opacity:1}
+/* 状态句是阅读字。出错提示放在舞台右侧、垂直居中，避开左下的招牌与右上的控件组；≤1080 招牌不再压在舞台上，回到中央。 */
+.toon-status,.toon-unavailable{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;margin:0;
+  padding:var(--s6);font-family:var(--read);font-size:14px;line-height:22px;color:var(--ink-2);text-align:center}
+.toon-unavailable{inset:0 var(--s6) 0 auto;max-width:40%;padding:0;justify-content:flex-end;text-align:right}
+.toon-unavailable{display:none}
+.toon-scene[data-state="ready"] .toon-status,.toon-scene[data-state="error"] .toon-status{display:none}
+.toon-scene[data-state="error"] .toon-unavailable{display:flex}
+.toon-scene[data-state="error"] canvas{display:none}
+html[data-skin="sakura"] .toon-scene{display:block}
+/* 没有 WebGL 时不留一个空的大框；只限樱花皮肤，其余皮肤的像素舞台照常按比例。 */
+html[data-skin="sakura"] .stage:has(.toon-scene[data-state="error"]){aspect-ratio:auto;min-height:240px}
+@media(max-width:1080px){.toon-unavailable{inset:0;max-width:none;padding:var(--s6);justify-content:center;text-align:center}}
+@media(prefers-reduced-motion:reduce){.toon-stage canvas{transition:none}}
+
+/* 换皮肤时压住过渡；昼夜切换不压（第 3.6 节：配色即时切换）。 */
+.skin-changing *,.skin-changing *::before,.skin-changing *::after{transition:none!important}
+/* 页头 .sitebar（V20 第 6.1 节，subpage.js 的 sitebar() 生成）：左站牌，右组分享在前、外观设置固定在最右；不吸顶。 */
+.sitebar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:40px;margin:var(--s4) 0 var(--s3)}
+.sitebar-l,.sitebar-r{display:flex;align-items:center;gap:var(--s2)}
+.sitebar-r{margin-left:auto}
+/* 子页站牌式返回链接（第 6.1 节）：站牌材质，像素 24「柯西」+ 像素 12「◀ 回到主页」，整块一个链接；悬停给后半句加下划线。
+   箭头是 play 水平翻转（arrow 是鼠标光标那张像素画）。 */
+.brand{display:flex;align-items:center;gap:var(--s2);min-height:40px;padding:0 12px;text-decoration:none;
+  background:var(--plate);color:var(--on-plate);border:2px solid var(--plate);font-size:12px;line-height:24px}
+.brand b{font-size:24px;line-height:32px;font-weight:normal}
+.brand span{display:flex;align-items:center;gap:var(--s1)}
+.brand .ic{transform:scaleX(-1)}
+.brand:hover span{text-decoration:underline;text-underline-offset:4px}
+/* 外观设置：summary 是搪瓷徽章，展开算按下态（站牌色）。展开面板锚定整条页头而不是 <details>，
+   右沿与页头右沿对齐，任何宽度都不伸出视口（面板向左溢出不增加 scrollWidth，检查抓不到）。 */
+.sitebar .appearance-settings{position:static}
+.appearance-settings>summary{display:flex;align-items:center;min-height:40px;padding:0 12px;list-style:none;font-size:12px;line-height:24px;color:var(--ink);background:var(--surface);border:2px solid var(--edge);box-shadow:0 2px 0 var(--edge)}
+.appearance-settings>summary::-webkit-details-marker{display:none}
+.appearance-settings[open]>summary{background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+.appearance-settings>.controls{position:absolute;right:0;top:calc(100% + var(--s2));z-index:60;display:flex;flex-direction:column;gap:var(--s3);width:320px;max-width:calc(100vw - 32px);padding:var(--s4);background:var(--surface);border:1px solid var(--line);box-shadow:var(--lift)}
+.skin-picker{display:flex;align-items:center;flex-wrap:wrap;gap:8px;min-width:0;font-size:12px;line-height:24px}
+.controls .skin-label{width:100%;margin:0;color:var(--ink-2)}
+/* ⚠️ .skin-choice 是 <button>，别给它写 cursor:pointer —— (0,1,0) 会盖掉
+   像素光标的裸 button 规则。守门：check-cursor.js 第 3 条（不许有裸 cursor:pointer）。 */
+/* 搪瓷徽章（V20 第 3.5 节）：当前皮肤（aria-pressed）用站牌色；第 6 层的 hover 只改背景。 */
+.skin-choice{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:6px 12px;border:2px solid var(--edge);background:var(--surface);color:var(--ink);font:inherit;box-shadow:0 2px 0 var(--edge);transition:background .16s,border-color .16s,transform .16s}
+.skin-choice[aria-pressed="true"]{background:var(--plate);color:var(--on-plate);border-color:var(--plate)}
+.skin-choice:focus-visible{outline:3px solid var(--rail);outline-offset:4px}
+.skin-choice:active{transform:translateY(2px);box-shadow:none}
+.skin-swatch{width:24px;height:20px;flex-shrink:0;display:block;border:1px solid #ffffff70;image-rendering:pixelated}
+.skin-swatch-sakura{background:linear-gradient(90deg,transparent 45%,#39465e 45% 55%,transparent 55%),linear-gradient(#b1d1de 45%,#efb3c8 45% 70%,#e7ded5 70% 85%,#647d76 85%)}
+.skin-swatch-coast{background:linear-gradient(90deg,transparent 65%,#faf1d8 65% 80%,transparent 80%),linear-gradient(#a8dbe6 45%,#3c9eb4 45% 75%,#eddbb4 75%)}
+.skin-swatch-observatory{background:radial-gradient(circle at 75% 25%,#edca80 0 2px,transparent 3px),linear-gradient(150deg,#192c45 60%,#627487 60% 75%,#354459 75%)}
+.skin-swatch-farm{background:linear-gradient(140deg,transparent 50%,#a75d47 50% 72%,transparent 72%),linear-gradient(#b6d0bb 50%,#7f955d 50%)}
+@media(hover:hover){.skin-choice:not([aria-pressed="true"]):hover,.appearance-settings:not([open])>summary:hover{background:var(--raised)}}
+@media(max-width:760px){.skin-choice{padding:4px 8px;gap:4px}.skin-swatch{width:16px;height:16px}}
+@media(max-width:430px){.sitebar{flex-wrap:wrap;row-gap:var(--s2)}}
+@media(prefers-reduced-motion:reduce){.skin-choice{transition:none}}
+
+.skin-diorama{display:none;position:absolute;inset:0;overflow:hidden;isolation:isolate}
+.skin-art{display:none;width:100%;height:100%;shape-rendering:crispEdges;image-rendering:pixelated}
+html:is([data-skin="coast"],[data-skin="observatory"],[data-skin="farm"]) .skin-diorama{display:block}
+html[data-skin="coast"] .skin-art[data-scene="coast"],html[data-skin="observatory"] .skin-art[data-scene="observatory"],html[data-skin="farm"] .skin-art[data-scene="farm"]{display:block}
+.skin-art[data-scene="coast"]{--scene-sky:#9dc9d0;--scene-haze:#b7d5d2;--scene-horizon:#ded9bb;--scene-far:#89aeb0;--scene-cloud:#ece7ce;--scene-cloud-shadow:#c3d6cb;--scene-star:#e7e2c5;--scene-window:#b8d3cc;--scene-lamp:#edd49b;--sea-far:#81b5b9;--sea-mid:#639fa9;--sea-near:#518c9b;--sea-deep:#467c90;--sea-light:#8fc0be;--sea-foam:#d3dac1}
+.skin-art[data-scene="observatory"]{--scene-sky:#303d5b;--scene-haze:#424f6e;--scene-horizon:#606882;--scene-far:#677b8e;--scene-near:#3e5867;--scene-star:#e4d5b1;--scene-window:#ead1a0}
+/* 原野农场：色值照搬旧 .pixel-window 景窗的四季与夜间值 */
+.skin-art[data-scene="farm"]{--scene-sky:#b8d4cc;--farm-sun:#fff0ac;--farm-far:#a6c3a9;--farm-near:#8bad91;--scene-cloud:#edf2da;--scene-cloud-shadow:#d3dcc0;--scene-star:#f5e2a4;--farm-g1:#899655;--farm-g2:#74824b;--farm-path:#a9986a;--farm-g3:#77834a;--farm-tuft:#566642}
+html[data-season="autumn"] .skin-art[data-scene="farm"]{--scene-sky:#d6d6a9;--farm-far:#bfbf8e;--farm-near:#a5ac78}
+html[data-season="winter"] .skin-art[data-scene="farm"]{--scene-sky:#bdcfd6;--farm-far:#c3d3d0;--farm-near:#dce6da;--farm-g1:#e7efe3;--farm-g2:#d8e3d8;--farm-path:#b2c5bd;--farm-g3:#d8e3d8;--farm-tuft:#b2c5bd}
+html[data-time="night"] .skin-art[data-scene="coast"]{--scene-sky:#2d4b63;--scene-haze:#405e75;--scene-horizon:#71858b;--scene-far:#536f7e;--scene-cloud:#78939e;--scene-cloud-shadow:#587587;--scene-window:#ebcb97;--scene-lamp:#ffdfa3;--sea-far:#547f8e;--sea-mid:#3c657f;--sea-near:#315971;--sea-deep:#294b65;--sea-light:#7299a5;--sea-foam:#a6b5b0}
+html[data-time="night"] .skin-art[data-scene="observatory"]{--scene-sky:#202e4c;--scene-haze:#303d5b;--scene-horizon:#4e5473;--scene-far:#566980;--scene-near:#32495b;--scene-window:#f5d4a0}
+html[data-time="night"] .skin-art[data-scene="farm"]{--scene-sky:#263c45;--farm-sun:#f5e2a4;--farm-far:#33504f;--farm-near:#3e5a56;--scene-cloud:#4c6266;--scene-cloud-shadow:#3c5157}
+html[data-time="night"] .skin-art .farm-props{filter:brightness(.78) saturate(.8)}
+.skin-art .scene-moon,.skin-art .scene-night-stars,.skin-art .coast-beam{opacity:0}
+html[data-time="night"] .skin-art .scene-sun{opacity:0}
+html[data-time="night"] .skin-art .scene-moon,html[data-time="night"] .skin-art .scene-night-stars{opacity:1}
+html[data-time="night"] .skin-art .coast-beam{opacity:.12}
+.skin-art .scene-star{animation:skin-star-glow 6s ease-in-out infinite;animation-delay:var(--star-delay,0s)}
+.coast-waves{animation:skin-wave-drift 8s ease-in-out infinite}.coast-waves.second{animation-direction:reverse;animation-delay:-4s}
+.coast-boat{animation:skin-boat-bob 7s ease-in-out infinite;transform-origin:360px 268px}
+.observatory-telescope{animation:skin-telescope-turn 18s ease-in-out infinite;transform-origin:3px 3px}
+.observatory-constellation{animation:skin-star-glow 9s ease-in-out infinite}
+/* 农场只留风车与炊烟两条动画（沿用 decor.js 的节奏），其余静止 */
+.skin-art[data-scene="farm"] .dc-blade{animation:farm-spin 16s linear infinite}
+.skin-art[data-scene="farm"] .dc-smoke{animation:farm-smoke 4.4s linear infinite;transform-origin:center}
+.skin-art[data-scene="farm"] .dc-smoke.b{animation-delay:1.5s}.skin-art[data-scene="farm"] .dc-smoke.c{animation-delay:3s}
+.skin-diorama[data-scene-paused="true"] *{animation-play-state:paused!important}
+@keyframes skin-wave-drift{0%,100%{transform:translateX(-5px);opacity:.65}50%{transform:translateX(5px);opacity:1}}
+@keyframes skin-boat-bob{0%,100%{transform:translate(330px,223px)}50%{transform:translate(334px,225px)}}
+@keyframes skin-star-glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes skin-telescope-turn{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+@keyframes farm-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes farm-smoke{0%{transform:translate(0,0) scale(.8);opacity:.5}100%{transform:translate(12px,-28px) scale(1.7);opacity:0}}
+@media(prefers-reduced-motion:reduce){.skin-diorama *{animation:none!important}}
+

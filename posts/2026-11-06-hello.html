@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-season="spring" data-time="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>这个主页是怎么来的：一次「扒站」改造记录 · WeCream</title>
+<script>(function boot() {
+  var root = document.documentElement, chosen = 'sakura';
+  try { chosen = localStorage.getItem('kx-skin') || chosen; } catch (_) {}
+  root.dataset.skin = ['sakura', 'coast', 'observatory', 'farm'].includes(chosen) ? chosen : 'sakura';
+  var now = new Date(), month = now.getMonth() + 1, hour = now.getHours();
+  root.dataset.season = month >= 3 && month <= 5 ? 'spring' : month >= 6 && month <= 8 ? 'summer' : month >= 9 && month <= 11 ? 'autumn' : 'winter';
+  root.dataset.time = hour < 6 || hour >= 18 ? 'night' : 'day';
+})();</script>
+<link rel="stylesheet" href="../font.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="canonical" href="https://wecream.github.io/posts/2026-11-06-hello.html">
+<meta name="description" content="把一个像素风个人主页连字体带三维场景扒下来，换成自己的名字，再清掉原作者的全部私人内容 —— 流程与踩过的坑。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这个主页是怎么来的：一次「扒站」改造记录 · WeCream">
+<meta property="og:description" content="把一个像素风个人主页连字体带三维场景扒下来，换成自己的名字，再清掉原作者的全部私人内容 —— 流程与踩过的坑。">
+<meta property="og:url" content="https://wecream.github.io/posts/2026-11-06-hello.html">
+</head>
+<body class="is-article">
+<div class="wrap">
+
+<header class="sitebar">
+  <div class="sitebar-l"><a class="brand" href="../index.html#timeline" aria-label="回到主页"><b>WeCream</b><span>回到主页</span></a></div>
+</header>
+
+<article class="panel artpage">
+  <h2 class="pt">本站</h2>
+  <h1 class="arttitle">这个主页是怎么来的：一次「扒站」改造记录</h1>
+  <p class="artmeta"><span class="mi">2026-11-06</span> · <span class="mi">前端</span> · <span class="mi">GitHub Pages</span> · <span class="mi">像素风</span></p>
+
+  <div class="artbody">
+
+    <p>这个主页不是从零画的：它最初是别人的一个像素风个人主页，我把整站扒下来，换成自己的名字，再把作者的全部私人内容清空，最后推到 GitHub Pages。整个过程花了不到一天，但有几个地方挺坑，记下来。</p>
+
+    <h2>一、先确认扒的是不是「那一页」</h2>
+
+    <p>第一件容易搞错的事：一个站点里页面很多，你在浏览器里右键另存的那个 <code>index.html</code>，很可能是子页而不是主页。我手上那份就是「工坊」子页，里面引用的全是 <code>../font.css</code>、<code>../assets/theme.css</code> 这种上一级路径 —— 单独放在一个文件夹里，样式和导航全断。</p>
+
+    <p>判断办法很直接：看它引用的相对路径是往上一级的，还是本站根目录的。真正的主页应该只引用 <code>./assets/</code> 这一层。</p>
+
+    <blockquote>
+      <p>另一个确认手段是查标题和大小：主页往往是 500 KB 以上的单文件，子页通常几十 KB。</p>
+    </blockquote>
+
+    <h2>二、把依赖闭包补齐，别猜</h2>
+
+    <p>这类「单文件自重」的页面，CSS 和大部分 JS 都内联在 HTML 里，看起来很好搬。但真正跑起来需要的还有：</p>
+
+    <ul>
+      <li><strong>字体</strong>：<code>font.css</code> 里 <code>@font-face</code> 引用的 woff2。不下载，页面会悄悄回退到系统字体，像素风就没了。</li>
+      <li><strong>importmap 指向的模块</strong>：<code>three.module.js</code> 这类。它会继续去引 <code>three.core.min.js</code>，两者必须在同一目录，路径不能随意改。</li>
+      <li><strong>异步 import 的入口</strong>：页面末尾的 <code>import('./assets/toon/main.js')</code> 下面还有一整张 import 图，要递归抓完，一个 404 就是黑屏。</li>
+    </ul>
+
+    <p>我的做法是写个递归下载器：从入口文件里正则出所有 <code>import</code> / <code>from</code>，用 <strong>相对路径归一化</strong>（split('/') 处理 <code>.</code> 和 <code>..</code>）拼出下一层的 URL，循环到没有新文件为止。这一步抓了 15 个文件、约 1.1 MB，零 404。</p>
+
+    <p>踩坑提醒：不要用绝对路径 API（比如 .NET 的 <code>GetFullPath</code>）去解析网页里的相对 import —— 它会把路径拼成你本机的绝对目录，然后整批 404。</p>
+
+    <h2>三、三维场景是程序化建模，不用抓贴图</h2>
+
+    <p>确认这一点能省很多事：如果 <code>main.js</code> 里只有渲染器、相机、光照和 <code>buildSky</code> / <code>makeBookshop</code> 这类函数，没有任何运行时拉取 <code>.glb</code> / <code>.png</code> 的痕迹，那这 15 个 JS 就是全部依赖，不需要再补模型和贴图。</p>
+
+    <h2>四、替换身份，但别忘了「凭据」和「计数」</h2>
+
+    <p>改名是最简单的部分，用全局替换就行。真正需要单独处理的，是那些不该跟着版式一起搬过来的东西：</p>
+
+    <ul>
+      <li><strong>留言板的 giscus 凭据</strong>：<code>data-repo</code> / <code>data-repo-id</code> / <code>data-category-id</code> 是原作者的仓库。照搬过去，等于你的页面把评论写进别人的 Discussions。必须换成自己的，或者先摘掉。</li>
+      <li><strong>访问计数、RSS、友链、个人主页链接</strong>：这些指向的都是原作者的账号，留着就是错的。</li>
+      <li><strong>私人内容</strong>：书影音馆藏、歌单、照片、文章，这些既是数据也是隐私，骨架版里应该清空而不是保留。</li>
+    </ul>
+
+    <p>清空的时候有个技巧：只删数据、不删容器。很多块级 JS 是 <code>querySelector</code> + 直接改属性的写法，把容器删了就会抛错误，把内容清空（或者把 JSON 换成空数组）则是安全的 —— 页面自己会显示空态。</p>
+
+    <h2>五、部署：仓库名就是域名</h2>
+
+    <p>GitHub Pages 的根站要求仓库名必须叫 <code>&lt;用户名&gt;.github.io</code>，站点地址就是 <code>https://&lt;用户名&gt;.github.io</code>。文件放仓库根目录，选 <code>main</code> 分支的 <code>/ (root)</code>。</p>
+
+    <p>一个顺序上的坑：仓库是空的时候，Pages 设置页的分支下拉只有 <code>None</code>，Save 是灰的，上面写着「必须先有内容才能发布」。所以正确顺序是 <strong>先 push，再回来选分支</strong>。选完等一两分钟，构建完成才有内容。</p>
+
+    <h2>最后</h2>
+
+    <p>扒站改造的好处是快：版式、动效、三维场景都是现成的，你只需要关心「哪些内容是我的」。坏处是你会继承一堆你不理解的代码，所以每改一处，最好顺手在注释里写清楚为什么 —— 下次打开这个文件的人，大概率还是你自己。</p>
+
+    <p><em>这篇文章是模板：复制这个文件就能写下一篇，具体步骤写在主页的「最新文章」下面。</em></p>
+
+  </div>
+
+  <div class="artfoot"><span>2026-11-06 · WeCream</span></div>
+</article>
+
+<nav class="apager">
+  <span class="apg empty"></span>
+  <a class="apg next" href="../index.html#timeline"><i>返回</i><b>主页的时间线</b></a>
+</nav>
+
+</div>
+</body>
+</html>

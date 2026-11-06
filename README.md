@@ -57,10 +57,10 @@ D:\personal web\
 
 | 区块 | 位置 | 现在是什么 |
 |---|---|---|
-| 概览的三个计数 | `id="board"` 里的 `.counts` | 2 个仓库 / 0 篇文章 / 0 张图像 |
+| 概览的三个计数 | `id="board"` 里的 `.counts` | 2 个仓库 / 1 篇文章 / 0 张图像 |
 | 工坊 · 精选项目 | `id="featured-projects"` 两张 `.pjcard` | 你两个真实仓库，截图是 `assets/projects/*.svg` 占位，说明文字写着「占位」 |
 | 工坊 · 仓库列表 | `id="projects"` 里的 `.rgrid` | 同上两个仓库 |
-| 最新文章 | `id="timeline"` | 只有一句留白提示 |
+| 最新文章 | `id="timeline"` | 一条真实文章卡片（`posts/2026-11-06-hello.html`）|
 | 博物馆 | `id="museum"` | 只有一句留白提示（原站这里 1300 行书影游） |
 | 相馆 | `id="gallery"` | 空白提示 |
 | 专精 | `id="skills"` 的 `.stack` | Python 45% / C# 30% / JS 15% / HTML 10%，**是示例值**，改成你自己的 |
@@ -68,6 +68,58 @@ D:\personal web\
 | 农场 | `id="farm"` + `#harvest-summary` | 年度统计 JSON 全是 0 |
 | 唱片机 | `id="music"` + `#music-data` | `week` / `all` 是空数组，界面上写「还没有听歌记录」 |
 | 留言板 | `id="comments-home"` | 静态说明文字，giscus 已摘掉 |
+
+## 加一篇文章（三步）
+
+站点没有后台，文章就是一个个 HTML 文件。已经放了一篇样板：`posts/2026-11-06-hello.html`。
+
+**第一步：复制样板并改名**
+
+```powershell
+cd "D:\personal web\posts"
+copy 2026-11-06-hello.html 2026-11-20-my-post.html
+```
+
+要改的是这几处（都在文件里，且都有注释/明显上下文）：
+
+| 改什么 | 在哪 |
+|---|---|
+| 浏览器标题 | `<title>… · WeCream</title>` |
+| 分享/搜索信息 | `<link rel="canonical">`、`<meta name="description">`、`og:title`、`og:description`、`og:url` |
+| 文章大标题 | `<h1 class="arttitle">` |
+| 日期与标签 | `<p class="artmeta"><span class="mi">2026-11-06</span> · …` |
+| 正文 | `<div class="artbody">` 里面，用 `<h2>` / `<p>` / `<ul>` / `<blockquote>` / `<code>` 就行 |
+| 署名 | `<div class="artfoot">` |
+
+图片放到 `assets/` 下，正文里用相对路径引用，比如 `<img src="../assets/posts/2026-11-20-1.png" alt="…">`（`.artbody img` 的样式已经写好，不用手动设宽度）。
+
+**第二步：在主页时间线加一条卡片**
+
+打开 `index.html`，找到 `id="timeline"` 那一块，里面已经有一条 `.tl-item`。整段复制一份，改四处：
+
+```html
+<li class="tl-item">                                   <!-- lead 只给最新那条，旧的去掉 -->
+  <div class="tl-when"><b>11.20</b><i>2026</i></div>    <!-- 月.日 / 年 -->
+  <div class="tl-axis"><span class="tl-dot">…</span></div>
+  <a class="tl-card" style="--i:1" href="posts/2026-11-20-my-post.html">
+    <div class="tl-body">
+      <b class="tl-title">你的标题</b>
+      <p class="tl-exc">一两句摘要，两行以内最好看。</p>
+      <div class="tl-tags"><span class="tl-tag">本站</span><span class="tl-tag">标签</span></div>
+    </div>
+    <svg class="ic sm tl-go" viewBox="0 0 16 16"><use href="#px-play"></use></svg>
+  </a>
+</li>
+```
+
+**第三步：改两个数字**
+
+- 概览 `.counts` 里 `<b>1</b><span>篇文章</span>` 改成实际篇数
+- 概览「最近写下」那句 `已写下 1 篇：…` 换成最新一篇的标题和链接
+
+最后 `git add -A; git commit -m "post: …"; git push`，一两分钟后线上就有了。
+
+> 注意：`index.html` 是由 `_source/build.py` 生成的。如果你以后重跑那个脚本，会把主页恢复成「只有一篇样板文章」的状态 —— 到时候把这段卡片改动同步回 `build.py` 的 `tl_new` 里，或者干脆以后只改 `index.html` 不再重跑脚本。
 
 ### 补内容时的两个坑
 
