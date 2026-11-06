@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN" data-season="spring" data-time="day">
 <head>
@@ -1284,6 +1285,18 @@ html[data-time="night"] .emptyhint{background:var(--raised)}
 <section class="panel" id="timeline">
   <h2 class="pt"><svg class="ic" viewBox="0 0 16 16"><use href="#px-sunflower"></use></svg>最新文章</h2>
   <div class="tlwrap"><span class="tl-line"></span>
+    <li class="tl-item">                                     <!-- 最新的那条带 lead，旧的去掉 lead -->
+  <div class="tl-when"><b>11.20</b><i>2026</i></div>      <!-- 月.日 / 年 -->
+  <div class="tl-axis"><span class="tl-dot"><svg class="ic sm" viewBox="0 0 16 16"><use href="#px-wateringcan"></use></svg></span></div>
+  <a class="tl-card" style="--i:1" href="posts/2026-11-20-my-post.html">   <!-- 这里填你的文件名 -->
+    <div class="tl-body">
+      <b class="tl-title">你的标题</b>
+      <p class="tl-exc">一两句摘要，两行以内最好看。</p>
+      <div class="tl-tags"><span class="tl-tag">本站</span><span class="tl-tag">标签</span></div>
+    </div>
+    <svg class="ic sm tl-go" viewBox="0 0 16 16"><use href="#px-play"></use></svg>
+  </a>
+</li>
     <ul class="tl">
       <li class="tl-item lead">
         <div class="tl-when"><b>11.06</b><i>2026</i></div>
